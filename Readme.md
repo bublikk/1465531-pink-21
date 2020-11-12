@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Власова](https://up.htmlacademy.ru/adaptive/21/user/1465531).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Фролова](https://up.htmlacademy.ru/htmlcss/29/user/1043867).
 
 ---
 
