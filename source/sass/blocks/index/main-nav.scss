@@ -1,0 +1,26 @@
+.main-nav {
+  background-color: $bg-nav;
+}
+
+.main-nav__wrapper {
+  width: 280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav__list {
+  //display: none;
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: $text-secondary;
+  @include text(700, 18px, 32px);
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+.slider__text {
+  @include text(400, 14px, 30px);
+}
+
+.slider__author {
+  @include text(800, 18px, 30px);
+}
+
+.slider__author-bio {
+  @include text(400, 14px, 30px);
+}

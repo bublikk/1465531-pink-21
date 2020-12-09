@@ -1,0 +1,8 @@
+.contacts__subtitle {
+  @include text(700, 18px, 25px);
+}
+
+.contacts__text {
+  @include text(300, 24px, 33px);
+  color: $text-info;
+}

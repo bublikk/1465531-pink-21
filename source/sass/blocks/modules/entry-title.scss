@@ -1,0 +1,8 @@
+.entry-title {
+  @include text(300, 24px, 29px);
+  color: $text-primary;
+}
+
+.entry-title--custom-color {
+  color: $text-secondary;
+}

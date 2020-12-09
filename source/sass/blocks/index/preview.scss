@@ -1,0 +1,22 @@
+.preview__inner {
+  background-color: $bg-info;
+}
+
+.preview__button {
+  @include text(700, 18px, 18px);
+  text-decoration: none;
+  color: $text-secondary;
+}
+
+.preview__item {
+  list-style: none;
+}
+
+.preview__link {
+  text-decoration: none;
+}
+
+.preview__note {
+  @include text(300);
+  color: $text-secondary;
+}

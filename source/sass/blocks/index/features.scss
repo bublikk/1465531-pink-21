@@ -1,0 +1,15 @@
+.features__inner {
+  background-color: $bg-secondary;
+}
+
+.features__item {
+  list-style: none;
+}
+
+.features__title {
+  @include text(700, 18px);
+}
+
+.features__description {
+  @include text();
+}
