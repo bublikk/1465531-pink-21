@@ -1,0 +1,15 @@
+.form__inner {
+  background-color: $bg-secondary;
+}
+
+.form__group {
+  width: 280px;
+  margin: auto;
+  border: none;
+}
+
+.form__legend {
+  @include text(400, 14px, 18px);
+  color: $text-info;
+  text-transform: uppercase;
+}
