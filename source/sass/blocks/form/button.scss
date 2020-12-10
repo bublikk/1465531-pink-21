@@ -1,0 +1,12 @@
+.button {
+  @include text(700, 18px, 30px);
+  color: $text-secondary;
+  text-transform: uppercase;
+  width: 276px;
+  height: 59px;
+  left: 22px;
+  top: 2589px;
+  background: $bg-button;
+  border: 2px solid $bg-button;
+  border-radius: 2px;
+}

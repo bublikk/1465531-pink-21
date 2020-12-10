@@ -1,0 +1,9 @@
+.contacts-group__label {
+  @include text(400, 14px, 30px);
+  color: $text-info;
+  text-transform: uppercase;
+}
+
+.contacts-group__input {
+  @include text(400, 18px, 30px);
+}
