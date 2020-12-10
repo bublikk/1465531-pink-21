@@ -1,3 +1,7 @@
+.popup__wrapper {
+
+}
+
 .popup__title {
   @include text(700, 18px, 24px);
   text-align: center;
@@ -5,5 +9,5 @@
 
 .popup__text {
   @include text(400, 14px, 24px);
-  text-align: center;
+  @include centerer;
 }

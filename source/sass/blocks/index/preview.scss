@@ -1,9 +1,13 @@
-.preview__wrapper {
-  @include wrapper();
+.preview__wrapper1 {
+  @include wrapper;
+}
+
+.preview__wrapper2 {
+  background-color: $bg-info;
 }
 
 .preview__inner {
-  background-color: $bg-info;
+  @include wrapper;
 }
 
 .preview__button {
@@ -17,5 +21,6 @@
 
 .preview__note {
   @include text(300);
+  text-align: center;
   color: $text-secondary;
 }

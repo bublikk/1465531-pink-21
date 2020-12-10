@@ -1,3 +1,11 @@
+.slider__item {
+  margin: 0;
+}
+
+.slider__author-info {
+  text-align: center;
+}
+
 .slider__text {
   @include text(400, 14px, 30px);
 }

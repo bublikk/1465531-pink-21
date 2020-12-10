@@ -1,0 +1,4 @@
+.subtitle {
+  @include text(400, 14px, 30px);
+  @include centerer;
+}
