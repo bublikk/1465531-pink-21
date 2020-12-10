@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// GLOBAL
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+
+
+// MODULES
+@import "blocks/modules/page.scss";
+@import "blocks/modules/entry-title.scss";
+@import "blocks/modules/visually-hidden.scss";
+@import "blocks/modules/social.scss";
+@import "blocks/modules/copyright.scss";
+@import "blocks/modules/title.scss";
+
+// INDEX PAGE
+@import "blocks/index/container.scss";
+@import "blocks/index/main-nav.scss";
+@import "blocks/index/preview.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/prices.scss";
+@import "blocks/index/reviews.scss";
+@import "blocks/index/slider.scss";
+@import "blocks/index/contacts.scss";
+@import "blocks/index/table-price.scss";
+
+// FORM PAGE
+@import "blocks/form/contest.scss";
+@import "blocks/form/subtitle.scss";
+@import "blocks/form/personal-group.scss";

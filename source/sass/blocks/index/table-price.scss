@@ -1,0 +1,19 @@
+.table-price__tariff-plan {
+  @include text(700, 16px, 30px);
+  color: $text-secondary;
+  background-color: $bg-table;
+}
+
+.table-price__price {
+  @include text(300, 18px, 30px);
+  color: $text-secondary;
+}
+
+.table-price__item {
+  @include text(400, 14px, 30px);
+}
+
+.table-price td {
+  @include text(400, 14px, 30px);
+  text-transform: uppercase;
+}

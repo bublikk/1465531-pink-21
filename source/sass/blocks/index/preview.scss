@@ -1,0 +1,21 @@
+.preview__wrapper {
+  @include wrapper();
+}
+
+.preview__inner {
+  background-color: $bg-info;
+}
+
+.preview__button {
+  @include text(700, 18px, 18px);
+  color: $text-secondary;
+}
+
+.preview__item {
+  list-style: none;
+}
+
+.preview__note {
+  @include text(300);
+  color: $text-secondary;
+}

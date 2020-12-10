@@ -1,0 +1,12 @@
+// FONT TYPE
+@mixin text($weight: 400, $size: 14px, $height: 24px) {
+  font-family: $basic-font;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin wrapper {
+  width: 280px;
+  margin: auto;
+}
