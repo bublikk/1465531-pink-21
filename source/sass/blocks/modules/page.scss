@@ -1,0 +1,24 @@
+.page__body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  @include text();
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+.page a {
+  text-decoration: none;
+  color: $text-primary;
+}
+
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page ul {
+  list-style: none;
+  padding-left: 0;
+}

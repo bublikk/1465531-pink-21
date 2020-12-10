@@ -5,3 +5,8 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin wrapper {
+  width: 280px;
+  margin: auto;
+}

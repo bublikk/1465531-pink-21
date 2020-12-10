@@ -1,0 +1,5 @@
+.title {
+  @include text(300, 24px, 33px);
+  color: $text-secondary;
+  text-align: center;
+}

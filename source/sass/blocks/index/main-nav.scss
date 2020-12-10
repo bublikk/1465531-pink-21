@@ -3,8 +3,7 @@
 }
 
 .main-nav__wrapper {
-  width: 280px;
-  margin: auto;
+  @include wrapper();
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -19,8 +18,7 @@
 }
 
 .main-nav__item a {
-  text-decoration: none;
-  color: $text-secondary;
   @include text(700, 18px, 32px);
+  color: $text-secondary;
   text-transform: uppercase;
 }
