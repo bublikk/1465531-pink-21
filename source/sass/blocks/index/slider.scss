@@ -1,9 +1,17 @@
+.slider__item {
+  margin: 0;
+}
+
+.slider__author-info {
+  text-align: center;
+}
+
 .slider__text {
   @include text(400, 14px, 30px);
 }
 
 .slider__author {
-  @include text(800, 18px, 30px);
+  @include text(700, 18px, 30px);
 }
 
 .slider__author-bio {

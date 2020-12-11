@@ -1,5 +1,6 @@
 .entry-title {
   @include text(300, 24px, 29px);
+  text-align: center;
   color: $text-primary;
 }
 

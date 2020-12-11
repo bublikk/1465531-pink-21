@@ -4,6 +4,6 @@
   text-transform: uppercase;
 }
 
-.personal-group__input {
+.personal-group__input::placeholder {
   @include text(400, 18px, 30px);
 }

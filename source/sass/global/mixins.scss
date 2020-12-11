@@ -10,3 +10,9 @@
   width: 280px;
   margin: auto;
 }
+
+@mixin centerer {
+  width: 280px;
+  margin: auto;
+  text-align: center;
+}

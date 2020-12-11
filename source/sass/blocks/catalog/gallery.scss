@@ -1,0 +1,25 @@
+.gallery__wrapper {
+  @include wrapper;
+  background-color: $bg-secondary;
+}
+
+.gallery__info {
+  @include text();
+  width: 249px;
+  margin: auto;
+}
+
+.gallery__autor {
+  @include text(300, 12px, 24px);
+  text-transform: uppercase;
+}
+
+.autor {
+  @include text(700);
+}
+
+.gallery__likes {
+  @include text(400, 12px, 24px);
+  color: $text-info;
+  text-transform: uppercase;
+}

@@ -11,19 +11,32 @@
 @import "blocks/modules/social.scss";
 @import "blocks/modules/copyright.scss";
 @import "blocks/modules/title.scss";
+@import "blocks/modules/subtitle.scss";
 
 // INDEX PAGE
-@import "blocks/index/container.scss";
+@import "blocks/index/page-header.scss";
 @import "blocks/index/main-nav.scss";
 @import "blocks/index/preview.scss";
 @import "blocks/index/features.scss";
 @import "blocks/index/prices.scss";
-@import "blocks/index/reviews.scss";
 @import "blocks/index/slider.scss";
 @import "blocks/index/contacts.scss";
 @import "blocks/index/table-price.scss";
+@import "blocks/index/reviews.scss";
+@import "blocks/index/page-footer.scss";
 
 // FORM PAGE
-@import "blocks/form/contest.scss";
-@import "blocks/form/subtitle.scss";
+@import "blocks/form/achievements-group.scss";
+@import "blocks/form/app-group.scss";
 @import "blocks/form/personal-group.scss";
+@import "blocks/form/contacts-group.scss";
+@import "blocks/form/message-group.scss";
+@import "blocks/form/submit-group.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/popup.scss";
+@import "blocks/form/inner-page.scss";
+
+// CATALOG PAGE
+@import "blocks/catalog/gallery.scss";
+@import "blocks/catalog/photo-editor.scss";
+@import "blocks/catalog/button-group.scss";

@@ -1,5 +1,9 @@
-.features__inner {
+.features__wrapper {
   background-color: $bg-secondary;
+}
+
+.features__inner {
+  @include centerer;
 }
 
 .features__item {

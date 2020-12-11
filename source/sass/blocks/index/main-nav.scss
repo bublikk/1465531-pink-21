@@ -9,16 +9,20 @@
   flex-wrap: wrap;
 }
 
+.main-nav__inner {
+  @include centerer;
+}
+
 .main-nav__list {
   //display: none;
 }
 
 .main-nav__item {
   list-style: none;
-}
 
-.main-nav__item a {
-  @include text(700, 18px, 32px);
-  color: $text-secondary;
-  text-transform: uppercase;
+  a {
+    @include text(700, 18px, 32px);
+    color: $text-secondary;
+    text-transform: uppercase;
+  }
 }

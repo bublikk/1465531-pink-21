@@ -5,5 +5,5 @@
 
 .popup__text {
   @include text(400, 14px, 24px);
-  text-align: center;
+  @include centerer;
 }
