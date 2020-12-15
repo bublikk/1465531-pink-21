@@ -3,17 +3,91 @@
 }
 
 .features__inner {
-  @include centerer;
+  width: 280px;
+  margin: auto;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin-left: 320px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+    margin: 24px;
+    text-align: center;
+  }
+}
+
+.features__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 .features__item {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 249px;
+  }
 }
 
 .features__title {
   @include text(700, 18px);
+
+  @media (min-width: $desktop-width) {
+    @include text(700, 30px, 30px);
+  }
+}
+
+.features__title--stronger {
+  @media (min-width: $tablet-width) {
+    @include text(700, 30px, 36px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(700, 30px, 30px);
+  }
 }
 
 .features__description {
-  @include text();
+  @include text;
+
+  @media (min-width: $desktop-width) {
+    @include text(400, 18px, 30px);
+  }
+}
+
+.features__description--link {
+  color: $text-info;
+}
+
+.features__article {
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-color: $bg-secondary;
+  }
+}
+
+.features__article-inner {
+  @media (min-width: $tablet-width) {
+    width: 297px;
+    margin-left: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 523px;
+    margin-left: 400px;
+  }
 }

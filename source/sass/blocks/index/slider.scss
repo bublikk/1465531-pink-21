@@ -17,3 +17,27 @@
 .slider__author-bio {
   @include text(400, 14px, 30px);
 }
+
+@media (max-width: $mobile-width-only) {
+  .slider__author-info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .slider__author-bio {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__text {
+    @include text(400, 18px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__text {
+    width: 688px;
+    margin: auto;
+  }
+}

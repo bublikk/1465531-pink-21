@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  @include wrapper;
+  @include centerer;
   text-align: center;
 }
 
@@ -10,4 +10,23 @@
 .contacts__text {
   @include text(300, 24px, 33px);
   color: $text-info;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    margin-right: 40px;
+    width: 250px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__item--reverse-order {
+    order: 3;
+  }
 }
