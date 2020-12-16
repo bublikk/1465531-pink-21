@@ -1,0 +1,11 @@
+.entry__title {
+  @include text(300, 24px, 33px);
+  color: $text-secondary;
+  text-align: center;
+
+  @include centerer;
+
+  @media (min-width: $tablet-width) {
+    @include text(300, 50px, 68px);
+  }
+}
