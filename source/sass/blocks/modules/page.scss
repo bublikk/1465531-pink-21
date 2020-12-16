@@ -1,11 +1,19 @@
 .page__body {
+  width: 100%;
+  height: 100%;
   min-width: 320px;
+  max-width: 1200px;
   margin: 0;
   padding: 0;
 
-  @include text();
+  @include text;
   color: $text-primary;
   background-color: $bg-primary;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
 }
 
 .page a {
@@ -20,4 +28,58 @@
 .page ul {
   list-style: none;
   padding-left: 0;
+}
+
+.page__entry-title {
+  @include text(300, 24px, 29px);
+  text-align: center;
+  color: $text-primary;
+
+  @media (min-width: $tablet-width) {
+    @include text(300, 40px, 55px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(300, 50px, 68px);
+  }
+}
+
+.page__entry-title--custom-color {
+  color: $text-secondary;
+}
+
+.page__entry-title--top {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page__entry-title--bottom {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page__entry-title--margin-top {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.page__entry-title--margin-bottom {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page__entry-title--shorter {
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 462px;
+    margin: auto;
+  }
 }

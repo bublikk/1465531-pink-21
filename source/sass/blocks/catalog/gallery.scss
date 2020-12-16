@@ -1,10 +1,10 @@
 .gallery__wrapper {
-  @include wrapper;
+  @include centerer;
   background-color: $bg-secondary;
 }
 
 .gallery__info {
-  @include text();
+  @include text;
   width: 249px;
   margin: auto;
 }

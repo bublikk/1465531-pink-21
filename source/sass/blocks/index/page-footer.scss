@@ -1,4 +1,12 @@
-.page-footer__wrapper {
-  @include wrapper;
+.page-footer {
+  @include centerer;
   text-align: center;
+}
+
+.page-footer__inner {
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
 }

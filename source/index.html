@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
   <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__wrapper">
-      <a class="logo">
+      <a class="main-nav__logo logo">
         <picture class="logo__img">
           <source media="(min-width: 320px)" srcset="img/pink.svg">
           <img src="img/pink.svg" width="74" height="23" alt="«Пинк»">
@@ -45,14 +45,13 @@
       </div>
       </div>
     </nav>
-    <section class="preview">
-      <div class="preview__wrapper1">
-      <h2 class="visually-hidden">Анонс мобильного приложения «Пинк»</h2>
-      <p class="entry-title entry-title--custom-color">Взгляните на жизнь иначе!</p>
-      <img src="https://via.placeholder.com/320x286" width="320" height="286" alt="Внешний вид розового фильтра «Пинк»">
+    <div class="preview">
+      <div class="preview__paragraph">
+        <p class="page__entry-title page__entry-title--custom-color page__entry-title--top">Взгляните на жизнь иначе!</p>
       </div>
-      <div class="preview__wrapper2">
+      <div class="preview__wrapper">
       <div class="preview__inner">
+      <p class="page__entry-title page__entry-title--custom-color page__entry-title--bottom">Взгляните на жизнь иначе!</p>
       <a class="preview__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
       <ul class="preview__list">
         <li class="preview__item">
@@ -77,33 +76,41 @@
       <p class="preview__note">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
       </div>
-    </section>
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">«Пинк» — мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
     <section class="features">
-      <div class="features__wrapper">
       <h2 class="visually-hidden">Характеристики приложения</h2>
-      <p class="entry-title">Устали от серости мегаполиса?</p>
-      <p class="entry-title">Нам есть, что вам<br> предложить!</p>
+      <p class="page__entry-title page__entry-title--margin-bottom">Устали от серости мегаполиса?</p>
+      <p class="page__entry-title page__entry-title--margin-top">Нам есть, что вам<br> предложить!</p>
+      <div class="features__wrapper">
       <div class="features__inner">
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__title">Поднимает настроение</h3>
-          <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <p class="features__description">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в несколько кликов!</p>
         </li>
         <li class="features__item">
           <h3 class="features__title">Меняет мир вокруг</h3>
-          <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <p class="features__description">Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект</p>
         </li>
         <li class="features__item">
-          <h3 class="features__title">Заводит новых друзей</h3>
-          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <h3 class="features__title">Заводит новых&nbsp;друзей</h3>
+          <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите&nbsp;новых</p>
         </li>
       </ul>
       </div>
       </div>
+      <article class="features__article">
+        <div class="features__article-inner">
+        <h3 class="features__title features__title--stronger">Эффект на 24 часа!</h2>
+        <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="features__description features__description--link" href="">Узнать больше об исследовании</a>
+        </div>
+      </article>
     </section>
+
     <section class="reviews">
       <div class="reviews__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
@@ -164,13 +171,13 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="entry-title">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="page__entry-title page__entry-title--shorter">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__subtitle">Звоните:</p>
             <p class="contacts__text">+7 (812) 555-66-66</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--reverse-order">
             <p class="contacts__subtitle">Пишите:</p>
             <p class="contacts__text">mail@htmlacademy.ru</p>
           </li>
@@ -185,7 +192,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__inner">
         <a class="page-footer__logo">
           <picture class="page-footer__img">
             <source media="(min-width: 320px)" srcset="https://via.placeholder.com/59x40">

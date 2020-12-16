@@ -6,13 +6,17 @@
   line-height: $height;
 }
 
-@mixin wrapper {
-  width: 280px;
-  margin: auto;
-}
-
 @mixin centerer {
   width: 280px;
   margin: auto;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: auto;
+  }
 }

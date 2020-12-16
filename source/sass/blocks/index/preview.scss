@@ -1,13 +1,47 @@
-.preview__wrapper1 {
-  @include wrapper;
+.preview {
+  @media (min-width: $tablet-width) {
+    background: url("/img/hand.png");
+    background-size: 320px 286px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 }
 
-.preview__wrapper2 {
+.preview__paragraph {
+  @include centerer;
+  height: 320px;
+  background: url("/img/hand.png");
+  background-size: 320px 286px;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    height: 0;
+  }
+}
+
+.preview__wrapper {
   background-color: $bg-info;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include centerer;
+  }
 }
 
 .preview__inner {
-  @include wrapper;
+  @include centerer;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 240px;
+    margin-left: 20px;
+  }
 }
 
 .preview__button {
@@ -15,8 +49,12 @@
   color: $text-secondary;
 }
 
+.preview__list {
+  display: flex;
+}
+
 .preview__item {
-  list-style: none;
+  height: 47px;
 }
 
 .preview__note {
