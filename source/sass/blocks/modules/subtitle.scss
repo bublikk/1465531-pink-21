@@ -21,3 +21,10 @@
     display: inline;
   }
 }
+
+.subtitle--narrow {
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    margin: auto;
+  }
+}

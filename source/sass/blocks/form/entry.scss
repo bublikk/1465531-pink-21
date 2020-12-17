@@ -9,3 +9,10 @@
     @include text(300, 50px, 68px);
   }
 }
+
+.entry__title--narrow {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: auto;
+  }
+}

@@ -1,3 +1,18 @@
 .photo-editor__wrapper {
   background-color: $bg-secondary;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: auto;
+  }
+}
+
+.photo-editor__inner {
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: auto;
+  }
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
