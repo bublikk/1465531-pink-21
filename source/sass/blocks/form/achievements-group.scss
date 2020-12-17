@@ -1,3 +1,15 @@
+@media (min-width: $tablet-width) {
+  .achievements-group {
+    order: -3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .achievements-group {
+    width: 936px;
+  }
+}
+
 .achievements-group__label {
   @include text (400, 18px, 30px);
 }

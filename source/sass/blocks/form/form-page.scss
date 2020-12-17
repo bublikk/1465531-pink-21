@@ -1,8 +1,4 @@
-.popup__inner--custom-background {
-  background-color: $bg-secondary;
-}
-
-.second-page__button {
+.form-page__button {
   @include text(700, 18px, 30px);
   color: $text-secondary;
   text-transform: uppercase;
@@ -13,4 +9,12 @@
   background: $bg-button;
   border: 1px solid $bg-button;
   border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+}
+
+.form-page__button--size {
+  margin: 40px 20px 40px;
 }

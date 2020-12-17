@@ -1,3 +1,15 @@
+@media (min-width: $tablet-width) {
+  .personal-group {
+    order: -6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal-group {
+    width: 455px;
+  }
+}
+
 .personal-group__label {
   @include text(400, 14px, 30px);
   color: $text-info;

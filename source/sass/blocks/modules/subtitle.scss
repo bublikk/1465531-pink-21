@@ -3,4 +3,21 @@
   text-align: center;
 
   @include centerer;
+
+  @media (min-width: $tablet-width) {
+    @include text(400, 18px, 30px);
+    width: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 756px;
+  }
+}
+
+.subtitle__hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }

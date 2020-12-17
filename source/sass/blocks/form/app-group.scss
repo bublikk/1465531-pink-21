@@ -1,3 +1,15 @@
+@media (min-width: $tablet-width) {
+  .app-group {
+    order: -5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .app-group {
+    width: 455px;
+  }
+}
+
 .app-group__label {
   @include text(400, 18px, 30px);
 }

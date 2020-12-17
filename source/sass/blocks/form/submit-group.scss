@@ -1,3 +1,23 @@
+@media (min-width: $mobile-width-only) {
+  .submit-group {
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .submit-group {
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .submit-group {
+    width: 936px;
+  }
+}
+
 .submit-group__note {
   @include text(400, 14px, 30px);
   text-transform: uppercase;
