@@ -1,5 +1,5 @@
 .slider__item {
-  margin: 0;
+  margin: 0 0 20px;
 }
 
 .slider__author-info {
@@ -12,6 +12,11 @@
 
 .slider__author {
   @include text(700, 18px, 30px);
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 23px;
+    margin-bottom: -2px;
+  }
 }
 
 .slider__author-bio {
@@ -40,4 +45,53 @@
     width: 688px;
     margin: auto;
   }
+}
+
+.slider__arrow {
+  background-color: $bg-primary;
+  border-color: $bg-table;
+  opacity: 0.3;
+  width: 22px;
+  height: 22px;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.slider__arrow—-left {
+  transform: rotate(135deg);
+}
+
+.slider__arrow—-right {
+  transform: rotate(-45deg);
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60px;
+  margin: 0 auto 60px;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $bg-table;
+  opacity: 0.3;
+  border: inherit;
+  cursor: pointer;
+}
+
+.slider__toggle--current {
+  width: 10px;
+  height: 10px;
+  background-color: $bg-primary;
+  border: 3px solid $bg-table;
+  opacity: 1;
 }

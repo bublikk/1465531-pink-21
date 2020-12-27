@@ -1,3 +1,8 @@
 .prices {
   background-color: $bg-secondary;
 }
+
+.prices__wrapper {
+  overflow: hidden;
+  width: 100%;
+}

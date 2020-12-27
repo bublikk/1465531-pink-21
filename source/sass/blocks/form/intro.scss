@@ -1,4 +1,4 @@
-.entry__title {
+.intro__text {
   @include text(300, 24px, 33px);
   color: $text-secondary;
   text-align: center;
@@ -10,7 +10,7 @@
   }
 }
 
-.entry__title--narrow {
+.intro__text--narrow {
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: auto;

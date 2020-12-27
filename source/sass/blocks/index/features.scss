@@ -1,5 +1,23 @@
+.features {
+  padding-top: 15px;
+}
+
 .features__wrapper {
+  position: relative;
   background-color: $bg-secondary;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 11px 0 291px;
+  }
+}
+
+.features__wrapper::before {
+  content: url("/img/triangle-white.svg");
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  margin: 0;
+  z-index: 10;
 }
 
 .features__inner {
@@ -21,8 +39,11 @@
 }
 
 .features__list {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    flex-direction: row;
     gap: 24px;
   }
 }
@@ -37,6 +58,10 @@
 
 .features__title {
   @include text(700, 18px);
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: -3px;
+  }
 
   @media (min-width: $desktop-width) {
     @include text(700, 30px, 30px);

@@ -8,8 +8,8 @@
   </head>
   <body class="page__body form-page">
   <header class="page-header">
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <div class="main-nav__container">
       <a class="main-nav__logo logo" href="index.html">
         <picture class="logo__img">
           <source media="(min-width: 320px)" srcset="img/pink.svg">
@@ -17,11 +17,12 @@
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
-        <span>Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
+      </div>
       <div class="main-nav__inner">
       <ul class="main-nav__list">
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--active">
           <a href="index.html">
             Главная
           </a>
@@ -43,10 +44,9 @@
         </li>
       </ul>
       </div>
-      </div>
     </nav>
-    <div class="entry">
-      <p class="entry__title">Конкурс на самое безбашенное путешествие с Пинк</p>
+    <div class="intro">
+      <p class="intro__text">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
   </header>
   <main>
@@ -142,7 +142,7 @@
           </fieldset>
           <div class="form__group submit-group">
           <button class="form-page__button" type="submit">Отправить форму</button>
-          <p class="submit-group__note"><span class="submit-group__asterisk">*</span> — обязательные поля</p>
+          <p class="submit-group__note"><sup>*</sup> — обязательные поля</p>
           </div>
         </form>
     </section>
@@ -193,5 +193,6 @@
         </div>
     </div>
   </section>
+  <script src="js/main-nav.js"></script>
   </body>
 </html>

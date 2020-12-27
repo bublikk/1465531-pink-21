@@ -1,0 +1,104 @@
+.table {
+  text-align: center;
+  border-spacing: 0;
+  padding-top: 76px;
+  margin: 0 auto 64px;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+
+.table__price {
+  @include text(300, 18px, 30px);
+  color: $text-secondary;
+}
+
+.table__item {
+  @include text(400, 14px, 30px);
+}
+
+.table td {
+  @include text(400, 14px, 30px);
+}
+
+th {
+  width: 276px;
+  padding: 15px 38px 15px;
+
+  &:nth-child(2) {
+    border-radius: 4px 0 0 0;
+    border-right: 2px solid $table-border;
+  }
+
+  &:nth-child(3) {
+    border-right: 2px solid $table-border;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 0 0;
+  }
+}
+
+td {
+  background-color: $bg-primary;
+  border-top: 2px solid $table-border;
+  border-right: 2px solid $table-border;
+  padding: 10px;
+
+  &:first-child {
+    border-left: 2px solid $table-border;
+  }
+}
+
+.table tr:last-child td {
+  border-bottom: 2px solid $table-border;
+}
+
+.table__text {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: inline;
+    text-transform: uppercase;
+  }
+}
+
+.table__hidden {
+  background-color: $bg-secondary;
+}
+
+.table__tariff {
+  @include text(700, 16px, 30px);
+  text-transform: uppercase;
+  color: $text-secondary;
+  background-color: $bg-table;
+}
+
+.table__visible-area {
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*
+.table__tariff--box-sizing {
+  display: inline-block;
+  width: 276px;
+}
+
+.table__tariff--box-sizing::before {
+  content: url("/img/hit.png");
+  position: absolute;
+  top: 0;
+  left: -2px;
+  z-index: 2;
+}
+
+@media (max-width: $mobile-width-only) {
+  .table__col2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-left: 21px;
+  }
+}
+*/
