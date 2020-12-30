@@ -2,39 +2,113 @@
   width: 280px;
   margin: auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: auto;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: auto;
+    padding-top: 59px;
+  }
 }
 
 .contacts__subtitle {
   @include text(700, 18px, 25px);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 1px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 -10px 0;
+  }
+}
+
+.contacts__subtitle--gap {
+  @media (min-width: $desktop-width) {
+    margin: 0 0 22px 0;
+  }
 }
 
 .contacts__text {
   @include text(300, 24px, 33px);
   color: $text-info;
+  margin: 0;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts__list {
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .contacts__item {
-    margin-right: 40px;
-    width: 250px;
+  @media (min-width: $desktop-width) {
+    gap: 70px;
+    margin: auto;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts__item--reverse-order {
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    margin-bottom: 45px;
+  }
+}
+
+.contacts__item--reverse-order {
+  @media (min-width: $tablet-width) {
+    margin-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
     order: 3;
+    margin-left: 0;
   }
 }
 
 .contacts__map {
   position: relative;
-  margin: 0;
+  width: 320px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    margin: -36px auto auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: -26px auto auto;
+  }
+
+  &::before {
+    content: url("/img/triangle-white-map.svg");
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    z-index: 10;
+    right: 138px;
+
+    @media (min-width: $tablet-width) {
+      right: -33px;
+      top: 7px;
+    }
+  }
 }
 
 .contacts__iframe {
@@ -42,13 +116,14 @@
   height: 200px;
   margin: 0;
   padding: 0;
-}
 
-.contacts__map::before {
-  content: url("/img/triangle-white-map.svg");
-  position: absolute;
-  margin: 0;
-  width: 100%;
-  z-index: 10;
-  right: 138px;
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 502px;
+  }
 }

@@ -1,6 +1,8 @@
 .page {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .page__body {
@@ -23,6 +25,10 @@
   flex-direction: column;
 }
 
+.page-header__main-nav {
+  margin-bottom: 29px;
+}
+
 .page a {
   text-decoration: none;
 }
@@ -37,6 +43,36 @@
   padding-left: 0;
 }
 
+.page__entry-wrapper {
+  position: relative;
+  margin-bottom: 29px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto -86px;
+  }
+}
+
+.page__entry-wrapper::before {
+  content: url("/img/triangle-white.svg");
+  position: absolute;
+  width: 100%;
+  top: 163px;
+  left: -670px;
+  margin: 0;
+  z-index: 10;
+
+  @media (min-width: $tablet-width) {
+    top: 172px;
+    left: -280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 254px;
+    left: 0;
+  }
+}
+
 .page__entry-title {
   @include text(300, 24px, 29px);
   text-align: center;
@@ -44,6 +80,8 @@
 
   @media (min-width: $tablet-width) {
     @include text(300, 40px, 55px);
+    margin-top: 32px;
+    line-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +91,18 @@
 
 .page__entry-title--custom-color {
   color: $text-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin: 37px auto 32px;
+    line-height: 48px;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(300, 50px, 68px);
+    width: 300px;
+    margin-bottom: 38px;
+  }
 }
 
 .page__entry-title--top {
@@ -68,12 +118,12 @@
 }
 
 .page__entry-title--margin-top {
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 70px;
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 136px;
   }
 }
 
@@ -84,6 +134,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 48px;
   }
 }
 
@@ -97,4 +151,17 @@
     width: 462px;
     margin: auto;
   }
+}
+
+.page__entry-title--contacts {
+  margin-bottom: 34px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.page__footer {
+  @include centerer;
+  text-align: center;
 }

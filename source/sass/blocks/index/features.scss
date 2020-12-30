@@ -5,19 +5,17 @@
 .features__wrapper {
   position: relative;
   background-color: $bg-secondary;
+  padding: 53px 0 291px;
 
-  @media (max-width: $mobile-width-only) {
-    padding: 11px 0 291px;
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 13px;
+    margin: 100px auto 96px;
   }
-}
 
-.features__wrapper::before {
-  content: url("/img/triangle-white.svg");
-  position: absolute;
-  width: 100%;
-  top: -100px;
-  margin: 0;
-  z-index: 10;
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    padding: 0;
+  }
 }
 
 .features__inner {
@@ -27,13 +25,14 @@
 
   @media (min-width: $tablet-width) {
     width: 310px;
-    margin-left: 320px;
+    margin: 47px 0 0 330px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    width: 900px;
-    margin: 24px;
+    margin: auto;
+    width: 892px;
+    padding: 0;
     text-align: center;
   }
 }
@@ -44,12 +43,19 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    gap: 24px;
+    padding-top: 333px;
+    gap: 72px;
   }
 }
 
 .features__item {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 249px;
@@ -58,23 +64,24 @@
 
 .features__title {
   @include text(700, 18px);
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: -3px;
-  }
+  margin-bottom: -3px;
 
   @media (min-width: $desktop-width) {
     @include text(700, 30px, 30px);
+    margin-bottom: 5px;
   }
 }
 
 .features__title--stronger {
   @media (min-width: $tablet-width) {
     @include text(700, 30px, 36px);
+    width: 168px;
   }
 
   @media (min-width: $desktop-width) {
     @include text(700, 30px, 30px);
+    width: 526px;
+    margin-bottom: 29px;
   }
 }
 
@@ -86,14 +93,23 @@
   }
 }
 
+.features__description--margin {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
 .features__description--link {
   color: $text-info;
+  border-bottom: 1px solid $text-info;
 }
 
 .features__article {
-  @media (min-width: $mobile-width-only) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -102,17 +118,19 @@
   @media (min-width: $desktop-width) {
     display: block;
     background-color: $bg-secondary;
+    margin: -30px 0 185px 0;
   }
 }
 
 .features__article-inner {
   @media (min-width: $tablet-width) {
     width: 297px;
-    margin-left: 320px;
+    margin: -4px 0 123px 330px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 523px;
-    margin-left: 400px;
+    width: 526px;
+    padding: 124px 0 112px 0;
+    margin-left: 501px;
   }
 }

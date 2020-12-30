@@ -1,8 +1,43 @@
 .prices {
   background-color: $bg-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .prices__wrapper {
+  width: 320px;
+  margin: 0 auto 42px;
+  padding-bottom: 47px;
   overflow: hidden;
-  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: auto;
+  }
+}
+
+.prices__table {
+  margin: 100px auto 40px;
+  position: relative;
+  left: -604px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    padding-top: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 152px;
+  }
 }

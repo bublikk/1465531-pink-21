@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -13,7 +13,7 @@
       main-nav--opened открывает меню
       main-nav--closed закрывает меню
     -->
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
       <div class="main-nav__container">
       <a class="main-nav__logo logo">
@@ -46,7 +46,7 @@
         </li>
         <li class="main-nav__item">
           <a href="https://htmlacademy.ru/intensive/adaptive">
-            Html academy
+            HTML Academy
           </a>
         </li>
       </ul>
@@ -92,8 +92,10 @@
     <h1 class="visually-hidden">«Пинк» — мобильное приложение для раскрашивания серых будней в розовый цвет</h1>
     <section class="features">
       <h2 class="visually-hidden">Характеристики приложения</h2>
+      <div class="page__entry-wrapper">
       <p class="page__entry-title page__entry-title--margin-bottom">Устали от серости мегаполиса?</p>
       <p class="page__entry-title page__entry-title--margin-top">Нам есть, что вам<br> предложить!</p>
+      </div>
       <div class="features__wrapper">
       <div class="features__inner">
       <ul class="features__list">
@@ -114,8 +116,8 @@
       </div>
       <article class="features__article">
         <div class="features__article-inner">
-        <h3 class="features__title features__title--stronger">Эффект на 24 часа!</h2>
-        <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <h3 class="features__title features__title--stronger">Эффект на&nbsp;24 часа!</h2>
+        <p class="features__description features__description--margin">Британские ученые провели исследования и доказали, что&nbspположительный эффект от&nbsp;использования приложения длится целые сутки!</p>
         <a class="features__description features__description--link" href="">Узнать больше об исследовании</a>
         </div>
       </article>
@@ -142,35 +144,35 @@
       </div>
     </section>
     <section class="prices">
+      <h2 class="visually-hidden">Тарифы</h2>
       <div class="prices__wrapper">
-        <h2 class="visually-hidden">Тарифы</h2>
         <table class="prices__table table">
-          <tr>
+          <tr class="table__item">
             <th class="table__hidden">&nbsp;</th>
             <th class="table__tariff" scope="col">База<br><span class="table__price">1,99 USD</span></th>
-            <th class="table__tariff table__visible-area" scope="col">Стандарт<br><span class="table__price">3,99 USD</span></th>
+            <th class="table__tariff" scope="col">Стандарт<br><span class="table__price">3,99 USD</span></th>
             <th class="table__tariff" scope="col">Анлим<br><span class="table__price">9,99 USD</span></th>
           </tr>
-          <tr>
-            <td class="radius radius--upper-left" scope="row">Розовый фильтр</td>
-            <td><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
-            <td class="table__col2"><span class="table__text">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
-            <td><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
+          <tr class="table__item">
+            <td class="table__subtitle radius radius--upper-left, " scope="row">Розовый фильтр</td>
+            <td><p class="table__inner"><span class="table__text">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
+            <td><p class="table__inner"><span class="table__text">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
+            <td><p class="table__inner"><span class="table__text">Розовый фильтр</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
           </tr>
-          <tr>
-            <td class="radius" scope="row">Смайлики</td>
-            <td><img src="img/no.svg" width="27" height="27" alt="Нет"></td>
-            <td class="table__col2"><span class="table__text">Смайлики</span><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
-            <td><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
+          <tr class="table__item">
+            <td class="table__subtitle radius" scope="row">Смайлики</td>
+            <td><p class="table__inner"><span class="table__text">Смайлики</span><img src="img/no.svg" width="27" height="27" alt="Нет"></p></td>
+            <td><p class="table__inner"><span class="table__text">Смайлики</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
+            <td><p class="table__inner"><span class="table__text">Смайлики</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
           </tr>
-          <tr>
-            <td class="radius radius--lower-left" scope="row">Комментарии</td>
-            <td><img src="img/no.svg" width="27" height="27" alt="Нет"></td>
-            <td class="table__col2"><span class="table__text">Комментарии</span><img src="img/no.svg" width="27" height="27" alt="Нет"></td>
-            <td class="radius radius--bottom-right"><img src="img/yes.svg" width="31" height="21" alt="Да"></td>
+          <tr class="table__item">
+            <td class="table__subtitle radius radius--lower-left" scope="row">Комментарии</td>
+            <td><p class="table__inner"><span class="table__text">Комментарии</span><img src="img/no.svg" width="27" height="27" alt="Нет"></p></td>
+            <td><p class="table__inner"><span class="table__text">Комментарии</span><img src="img/no.svg" width="27" height="27" alt="Нет"></p></td>
+            <td class="radius radius--bottom-right"><p class="table__inner"><span class="table__text">Комментарии</span><img src="img/yes.svg" width="31" height="21" alt="Да"></p></td>
           </tr>
         </table>
-        <p class="slider__toggles">
+        <p class="slider__toggles slider__toggles--hidden">
           <button class="slider__toggle" type="button" aria-label="Первый слайд"></button>
           <button class="slider__toggle  slider__toggle--current" type="button" aria-label="Второй слайд"></button>
           <button class="slider__toggle" type="button" aria-label="Третий слайд"></button>
@@ -180,7 +182,7 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="page__entry-title page__entry-title--shorter">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="page__entry-title page__entry-title--shorter page__entry-title--contacts">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__subtitle">Звоните:</p>
@@ -191,7 +193,7 @@
             <p class="contacts__text">mail@htmlacademy.ru</p>
           </li>
           <li class="contacts__item">
-            <p class="contacts__subtitle">Приезжайте в гости:</p>
+            <p class="contacts__subtitle contacts__subtitle--gap">Приезжайте в гости:</p>
             <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
           </li>
         </ul>
@@ -202,7 +204,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page__footer page-footer">
     <div class="page-footer__inner">
         <a class="page-footer__logo">
           <picture class="page-footer__img">
@@ -214,19 +216,27 @@
       <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Мы в Твиттере</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Мы в Фейсбуке</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--play-market" href="https://www.instagram.com/htmlacademy">Мы в Play Маркете</a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Наш канал на Ютуб</span>
+          </a>
         </li>
       </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </div>
   </footer>
