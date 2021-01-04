@@ -1,6 +1,6 @@
 .preview {
   @media (min-width: $tablet-width) {
-    background: url("/img/hand.png");
+    background-image: url("/img/hand.png");
     background-size: 320px 286px;
     background-repeat: no-repeat;
     background-position: right;
@@ -13,6 +13,7 @@
   background: url("/img/hand.png");
   background-size: 320px 286px;
   background-repeat: no-repeat;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
     height: 0;
@@ -21,13 +22,16 @@
 
 .preview__wrapper {
   background-color: $bg-info;
+  padding: 30px 0 19px;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto 76px;
     background-color: inherit;
   }
 
   @media (min-width: $desktop-width) {
     @include centerer;
+    padding: 0;
   }
 }
 
@@ -39,26 +43,74 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 240px;
+    width: 300px;
     margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 62px 0 0 0;
+    padding-bottom: 107px;
   }
 }
 
 .preview__button {
-  @include text(700, 18px, 18px);
-  color: $text-secondary;
+  width: 280px;
+  height: 55px;
+  border: 3px solid $bg-primary;
+  box-sizing: border-box;
+  border-radius: 29px;
+  background-color: inherit;
+  padding: 12px;
+  margin-bottom: 30px;
+
+  a {
+    @include text(700, 18px, 18px);
+    color: $text-secondary;
+
+    @media (min-width: $desktop-width) {
+      @include text(700, 21px, 18px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px;
+    margin-bottom: 57px;
+  }
 }
 
 .preview__list {
   display: flex;
+  align-items: baseline;
+  gap: 35px;
+  margin-left: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin: 9px auto 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .preview__item {
   height: 47px;
 }
 
+.preview__app-store {
+  background-image: url("/img/app-store.png");
+}
+
 .preview__note {
   @include text(300);
   text-align: center;
   color: $text-secondary;
+
+  @media (min-width: $tablet-width) {
+    @include text(300, 18px, 24px);
+  }
 }

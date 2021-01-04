@@ -5,3 +5,24 @@
 .social__item {
   list-style: none;
 }
+
+.social__link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: auto 6px;
+  border-radius: 50%;
+  border: 3px solid rgba($bg-table, 0.1);
+}
+
+.social__link--twitter {
+  background: url("/img/twitter.svg") no-repeat center;
+}
+
+.social__link--facebook {
+  background: url("/img/facebook.svg") no-repeat center;
+}
+
+.social__link--youtube {
+  background: url("/img/youtube.svg") no-repeat center;
+}

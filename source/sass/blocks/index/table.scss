@@ -1,0 +1,118 @@
+.table {
+  text-align: center;
+  border-spacing: 0;
+  table-layout: fixed;
+  white-space: nowrap;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
+}
+
+th {
+  width: 276px;
+  padding: 13px 37px 26px;
+
+  &:nth-child(2) {
+    border-radius: 4px 0 0 0;
+    border-right: 2px solid $table-border;
+  }
+
+  &:nth-child(3) {
+    border-right: 2px solid $table-border;
+  }
+
+  &:last-child {
+    border-radius: 0 4px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    padding: 12px 0 7px 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 20px 1px;
+  }
+}
+
+td {
+  @include text(400, 14px, 30px);
+  background-color: $bg-primary;
+  border-top: 2px solid $table-border;
+  border-right: 2px solid $table-border;
+  padding: 13px 17px 16px 21px;
+
+  &:first-child {
+    border-left: 2px solid $table-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 0 2px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(400, 18px, 30px);
+  }
+}
+
+.table .table__item:last-child td {
+  border-bottom: 2px solid $table-border;
+}
+
+.table__hidden {
+  background-color: $bg-secondary;
+}
+
+.table__tariff {
+  @include text(700, 16px, 30px);
+  text-transform: uppercase;
+  color: $text-secondary;
+  background-color: $bg-table;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    @include text(700, 18px, 30px);
+  }
+}
+
+.table__price {
+  @include text(300, 18px, 30px);
+  color: $text-secondary;
+
+  @media (min-width: $desktop-width) {
+    @include text(300, 24px, 30px);
+  }
+}
+
+.table__subtitle {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 0 0 0 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 0 16px 21px;
+  }
+}
+
+.table__inner {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.table__text {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: inline;
+    text-transform: uppercase;
+  }
+}

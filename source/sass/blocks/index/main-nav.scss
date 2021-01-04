@@ -1,40 +1,41 @@
 .main-nav {
+  position: static;
   background-color: $bg-nav;
 }
 
-.main-nav__wrapper {
-  @include centerer;
+.main-nav__container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 22px 0 9px;
+
+  @include centerer;
 
   @media (min-width: $tablet-width) {
-    @include centerer;
+    padding-top: 41px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     @include centerer;
-  }
-
-  .main-nav__toggle {
-    display: none;
+    display: flex;
   }
 
   .main-nav__logo {
-    margin-right: 173px;
+    width: 147px;
+    height: 40px;
+    background-color: pink;
+    margin: -43px 173px 0 0;
   }
 }
 
 .main-nav__inner {
   text-align: center;
-  width: 280px;
-  margin: auto;
+  margin: -7px auto;
 
   @media (min-width: $tablet-width) {
     min-width: 620px;
-    margin: auto;
+    margin: 28px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +44,7 @@
 }
 
 .main-nav__list {
-  //display: none;
+  /*display: none;*/
   display: flex;
   flex-direction: column;
 
@@ -63,8 +64,111 @@
     color: $text-secondary;
     text-transform: uppercase;
 
+    @media (max-width: $tablet-width) {
+      padding: 15px;
+    }
+
     @media (min-width: $desktop-width) {
       @include text(400, 18px, 18px);
+      text-transform: none;
     }
+  }
+}
+
+/*Стили для раскрывающегося меню*/
+@media (max-width: $tablet-width) {
+  .main-nav--opened .main-nav__wrapper {
+    background-color: $bg-table;
+  }
+
+  .main-nav__toggle {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $bg-primary;
+    box-shadow: 0 10px 0 0 $bg-primary, 0 20px 0 0 $bg-primary;
+  }
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: fade($bg-primary, 30%);
+    box-shadow:
+      0 8px 0 0 $bg-primary,
+      0 16px 0 0 $bg-primary;
+  }
+
+  .main-nav__list a {
+    display: block;
+    border-top: 2px solid rgba(#ffffff, 0.15);
+    border-bottom: 1px solid $text-primary;
+  }
+
+  .main-nav__item--border-top {
+    border-top: 1px solid $text-primary;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: -4px;
+      width: 31px;
+      height: 3px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade(#ffffff, 30%);
+    }
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  /*Пошла реализация мобильного меню без JS*/
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__inner {
+    position: static;
+    min-height: 0;
+    margin-top: -11px;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
   }
 }

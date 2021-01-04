@@ -22,8 +22,12 @@
   @include text(400, 14px, 30px);
   text-transform: uppercase;
   text-align: center;
-}
 
-.submit-group__asterisk {
-  color: $text-info;
+  sup {
+    position: static;
+    margin-left: 5px;
+    vertical-align: baseline;
+    font-size: inherit;
+    color: $text-info;
+  }
 }

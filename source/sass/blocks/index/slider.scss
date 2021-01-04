@@ -1,5 +1,9 @@
 .slider__item {
-  margin: 0;
+  margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 38px;
+  }
 }
 
 .slider__author-info {
@@ -8,14 +12,37 @@
 
 .slider__text {
   @include text(400, 14px, 30px);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: -11px;
+  }
 }
 
 .slider__author {
   @include text(700, 18px, 30px);
+  padding-top: 23px;
+  margin-bottom: -2px;
+
+  @media (min-width: $tablet-width) {
+    @include text(700, 20px, 30px);
+    margin-bottom: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include text(700, 24px, 30px);
+  }
 }
 
 .slider__author-bio {
   @include text(400, 14px, 30px);
+
+  @media (min-width: $desktop-width) {
+    @include text(400, 18px, 30px);
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -38,6 +65,75 @@
 @media (min-width: $desktop-width) {
   .slider__text {
     width: 688px;
-    margin: auto;
+    margin: 0 auto -13px;
+  }
+}
+
+.slider__arrow {
+  background-color: $bg-primary;
+  border-color: $bg-table;
+  opacity: 0.3;
+  width: 30px;
+  height: 30px;
+  border-width: 0 1px 1px 0;
+  display: block;
+  outline: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.slider__arrow—-left {
+  transform: rotate(135deg);
+  position: absolute;
+  top: 33px;
+  left: 7px;
+}
+
+.slider__arrow—-right {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 33px;
+  left: 903px;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60px;
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($bg-table, 0.3);
+  border: inherit;
+  cursor: pointer;
+}
+
+.slider__toggle--current {
+  width: 10px;
+  height: 10px;
+  background-color: $bg-primary;
+  border: 3px solid $bg-table;
+}
+
+.slider__toggles--hidden {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

@@ -1,12 +1,53 @@
-.page-footer {
-  @include centerer;
-  text-align: center;
-}
-
 .page-footer__inner {
   display: flex;
+  flex-direction: column;
 
-  @media (max-width: $mobile-width-only) {
-    flex-direction: column;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 31px auto;
+  }
+}
+
+.page-footer__logo {
+  width: 145px;
+  height: 40px;
+  background-color: pink;
+  margin: 37px auto 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__social {
+  margin: 0 auto 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 18px 0 0 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 22px 0 0 231px;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 12px 0 0 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 12px 0 0 226px;
   }
 }
