@@ -1,0 +1,21 @@
+.range-slider {
+  padding-top: 35px;
+}
+
+.range-slider__form {
+  width: 240px;
+  height: 85px;
+  background-color: pink;
+  margin: 0 auto 74px;
+
+  @media (min-width: $tablet-width) {
+    width: 274px;
+    height: 190px;
+    margin: -27px auto 67px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    margin: -35px 0 155px 110px;
+  }
+}

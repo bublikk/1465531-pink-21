@@ -1,0 +1,9 @@
+.catalog-page__subtitle {
+  @include text(400, 14px, 30px);
+  text-align: center;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include text(400, 18px, 30px);
+  }
+}

@@ -17,8 +17,16 @@
 }
 
 .intro__text--narrow {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 620px;
-    margin: auto;
+    margin: 57px auto -37px;
+  }
+}
+
+.intro--catalog {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 85px;
   }
 }

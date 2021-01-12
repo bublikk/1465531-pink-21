@@ -8,12 +8,19 @@
 }
 
 .photo-editor__inner {
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
-    margin: auto;
-  }
+  width: 280px;
+  padding-top: 20px;
+  margin: 43px auto 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    width: 620px;
+    padding-top: 58px;
+    margin: 70px auto 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin: 66px auto 36px 80px;
   }
 }
