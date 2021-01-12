@@ -1,19 +1,15 @@
-@media (min-width: $mobile-width-only) {
-  .submit-group {
-    text-align: center;
-  }
-}
+.submit-group {
+  text-align: center;
 
-@media (min-width: $tablet-width) {
-  .submit-group {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    border: none;
     order: -1;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .submit-group {
+  @media (min-width: $desktop-width) {
     width: 936px;
   }
 }
@@ -22,6 +18,7 @@
   @include text(400, 14px, 30px);
   text-transform: uppercase;
   text-align: center;
+  margin: 35px auto 0;
 
   sup {
     position: static;
@@ -29,5 +26,13 @@
     vertical-align: baseline;
     font-size: inherit;
     color: $text-info;
+  }
+
+  span {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 }

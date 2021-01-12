@@ -12,7 +12,7 @@
 
   min-width: 320px;
   max-width: 1200px;
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   @include text;
@@ -158,6 +158,18 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 38px;
+  }
+}
+
+.page__subtitle {
+  margin: 46px auto 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 92px auto 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 92px auto 33px;
   }
 }
 

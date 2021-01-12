@@ -21,6 +21,7 @@
 
 .popup__inner--custom-background {
   background-color: $bg-secondary;
+  padding: 52px 0 52px 0;
 }
 
 .popup__inner--background-hidden {
@@ -45,11 +46,8 @@
 .popup__text {
   @include text(400, 14px, 24px);
   text-align: center;
+  width: 280px;
   margin: auto;
-
-  @media (min-width: $mobile-width-only) {
-    width: 280px;
-  }
 
   @media (min-width: $tablet-width) {
     @include text(400, 18px, 24px);
@@ -58,5 +56,10 @@
 
   @media (min-width: $desktop-width) {
     width: 378px;
+    margin-bottom: 40px;
   }
+}
+
+.popup__text--custom-background {
+  margin-bottom: 40px;
 }

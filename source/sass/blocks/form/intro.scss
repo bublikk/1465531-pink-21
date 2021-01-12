@@ -2,11 +2,17 @@
   @include text(300, 24px, 33px);
   color: $text-secondary;
   text-align: center;
+  padding: 4px 4px 42px 4px;
 
   @include centerer;
 
   @media (min-width: $tablet-width) {
     @include text(300, 50px, 68px);
+    margin: 65px auto 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 57px auto 46px;
   }
 }
 

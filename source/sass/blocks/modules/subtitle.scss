@@ -1,8 +1,7 @@
 .subtitle {
   @include text(400, 14px, 30px);
   text-align: center;
-
-  @include centerer;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     @include text(400, 18px, 30px);
