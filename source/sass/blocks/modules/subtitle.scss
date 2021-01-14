@@ -21,9 +21,19 @@
   }
 }
 
+.subtitle--catalog {
+  width: 250px;
+  margin: 46px auto 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    margin: 91px auto 78px;
+  }
+}
+
 .subtitle--narrow {
   @media (min-width: $desktop-width) {
-    width: 620px;
-    margin: auto;
+    width: 640px;
+    margin: 91px auto 89px;
   }
 }

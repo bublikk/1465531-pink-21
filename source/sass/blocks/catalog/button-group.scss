@@ -1,4 +1,10 @@
-.upload-button {
+.button-group {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.button-group__button {
   @include text(700, 18px, 18px);
   color: $text-info;
   width: 280px;
@@ -6,15 +12,31 @@
   border: 3px solid $text-info;
   box-sizing: border-box;
   border-radius: 30px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
 }
 
-.cancel-button {
-  @include text(700, 18px, 18px);
-  color: $bg-table;
-  width: 280px;
-  height: 55px;
-  border: 3px solid $bg-table;
-  box-sizing: border-box;
-  border-radius: 30px;
-  opacity: 0.1;
+.button-group__upload {
+  @media (min-width: $tablet-width) {
+    margin: auto auto 25px 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 -23px 0 110px;
+  }
+}
+
+.button-group__cancel {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: auto auto 53px 67px;
+  }
 }
