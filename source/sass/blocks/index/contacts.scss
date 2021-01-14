@@ -97,16 +97,28 @@
   }
 
   &::before {
-    content: url("/img/triangle-white-map.svg");
+    content: "";
     position: absolute;
-    margin: 0;
-    width: 100%;
+    background-image: url("/img/triangle-white-map.svg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 123px;
     z-index: 10;
-    right: 138px;
+    top: -12px;
+    left: -138px;
 
     @media (min-width: $tablet-width) {
-      right: -33px;
-      top: 7px;
+      width: 1200px;
+      height: 123px;
+      top: -42px;
+      left: 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1439px;
+      height: 123px;
+      top: 68px;
+      left: 122px;
     }
   }
 }

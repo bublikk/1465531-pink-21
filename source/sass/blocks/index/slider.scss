@@ -12,6 +12,7 @@
 
 .slider__text {
   @include text(400, 14px, 30px);
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: -8px;
@@ -19,6 +20,20 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: -11px;
+  }
+}
+
+.slider__text::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 63px;
+    z-index: 10;
+    top: -92px;
+    left: 301px;
   }
 }
 

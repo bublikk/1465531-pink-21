@@ -1,3 +1,9 @@
+.reviews {
+  position: relative;
+  z-index: 20;
+  background: $bg-primary;
+}
+
 .reviews__wrapper {
   position: relative;
   width: 280px;

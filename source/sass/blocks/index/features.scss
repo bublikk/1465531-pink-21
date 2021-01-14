@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 27px 0 13px;
-    margin: 100px auto 96px;
+    margin: 100px auto -10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +40,6 @@
 .features__list {
   display: flex;
   flex-direction: column;
-  position: relative;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -51,6 +50,7 @@
 
 .features__item {
   list-style: none;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -63,13 +63,93 @@
   }
 }
 
-.features__item::after {
+.features__item:nth-child(1)::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/screen-desktop-1.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 382px;
+    top: -312px;
+    left: 34px;
+    z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/screen-desktop-1@2x.png");
+      background-size: 186px auto;
+    }
+  }
+}
+
+.features__item:nth-child(2)::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/screen-desktop-2.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 382px;
+    top: -312px;
+    left: 34px;
+    z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/screen-desktop-2@2x.png");
+      background-size: 186px auto;
+    }
+  }
+}
+
+.features__item:nth-child(3)::before {
   content: "";
   position: absolute;
   background-image: url("/img/screen-mobile-3.png");
   background-repeat: no-repeat;
+  width: 157px;
+  height: 320px;
+  top: 168px;
+  left: 62px;
   z-index: 10;
-  background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/screen-mobile-3@2x.png");
+    background-size: 157px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/screen-tablet-3.png");
+    background-repeat: no-repeat;
+    width: 268px;
+    height: 547px;
+    top: -312px;
+    left: -311px;
+    z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/screen-tablet-3@2x.png");
+      background-size: 268px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/screen-desktop-3.png");
+    background-repeat: no-repeat;
+    width: 186px;
+    height: 382px;
+    top: -312px;
+    left: 34px;
+    z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/screen-desktop-3@2x.png");
+      background-size: 186px auto;
+    }
+  }
 }
 
 .features__title {
@@ -123,12 +203,33 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: relative;
+    background-color: $bg-primary;
+    z-index: 20;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     background-color: $bg-secondary;
     margin: -30px 0 185px 0;
+  }
+}
+
+.features__article::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/timer.svg");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  top: -42px;
+  left: 62px;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+    top: 68px;
+    left: 122px;
   }
 }
 
