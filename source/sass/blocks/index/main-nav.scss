@@ -11,7 +11,7 @@
   @include centerer;
 
   @media (min-width: $tablet-width) {
-    padding-top: 41px;
+    padding-top: 26px;
   }
 }
 
@@ -22,9 +22,6 @@
   }
 
   .main-nav__logo {
-    width: 147px;
-    height: 40px;
-    background-color: pink;
     margin: -43px 173px 0 0;
   }
 }
@@ -101,6 +98,10 @@
     cursor: pointer;
     border: none;
     outline: none;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 15px;
+    }
   }
 
   .main-nav--closed .main-nav__toggle::before {

@@ -40,6 +40,7 @@
 .features__list {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -60,6 +61,15 @@
   @media (min-width: $desktop-width) {
     width: 249px;
   }
+}
+
+.features__item::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/screen-mobile-3.png");
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-position: 50% 0;
 }
 
 .features__title {
