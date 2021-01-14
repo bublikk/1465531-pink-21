@@ -59,6 +59,10 @@
 .main-nav__item {
   list-style: none;
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: -10px;
+  }
+
   a {
     @include text(700, 18px, 32px);
     color: $text-secondary;
@@ -72,6 +76,13 @@
       @include text(400, 18px, 18px);
       text-transform: none;
     }
+  }
+}
+
+.main-nav__item--underscore {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $bg-primary;
+    padding-bottom: 7px;
   }
 }
 

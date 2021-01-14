@@ -1,15 +1,89 @@
-@media (min-width: $tablet-width) {
-  .achievements-group {
+.achievements-group {
+  @media (min-width: $tablet-width) {
     order: -3;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .achievements-group {
+  @media (min-width: $desktop-width) {
     width: 936px;
   }
 }
 
+.achievements-group__list {
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 0 10px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.achievements-group__item {
+  margin-bottom: 37px;
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+    margin-right: 20px;
+  }
+}
+
+.achievements-group__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.achievements-group__input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.achievements-group__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid $table-border;
+  border-radius: 2px;
+  margin-right: 20px;
+  background: $bg-primary;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 60%;
+}
+
+.achievements-group__input:checked + label::before {
+  background-image: url("/img/tick.png");
+}
+
+.achievements-group__input:not(:disabled) + label:hover::before {
+  border-color: $bg-table;
+}
+
+.achievements-group__input:not(:disabled) + label:active::before {
+  border-color: $text-info;
+}
+
 .achievements-group__label {
   @include text (400, 18px, 30px);
+  cursor: pointer;
+}
+
+.achievements-group__item--order-6 {
+  order: -6;
+}
+
+.achievements-group__item--order-5 {
+  order: -5;
+}
+
+.achievements-group__item--order-4 {
+  order: -4;
 }

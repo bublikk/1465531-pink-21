@@ -1,12 +1,29 @@
-@media (min-width: $tablet-width) {
-  .personal-group {
+.personal-group {
+  @media (min-width: $tablet-width) {
     order: -6;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .personal-group {
-    width: 455px;
+.personal-group__list {
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+  }
+}
+
+.personal-group__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
   }
 }
 
@@ -14,6 +31,24 @@
   @include text(400, 14px, 30px);
   color: $text-info;
   text-transform: uppercase;
+  margin: 0 0 5px 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 20px 0 -1px;
+  }
+}
+
+.personal-group__input {
+  border: 2px solid $table-border;
+  border-radius: 2px;
+  width: 256px;
+  padding: 23px 0 20px 20px;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    padding: 15px 0 28px 19px;
+  }
 }
 
 .personal-group__input::placeholder {

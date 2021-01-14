@@ -1,15 +1,76 @@
-@media (min-width: $tablet-width) {
-  .app-group {
+.app-group {
+  @media (min-width: $tablet-width) {
     order: -5;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .app-group {
-    width: 455px;
+.app-group__list {
+  margin: 32px auto 25px;
+
+  @media (min-width: $tablet-width) {
+    margin: 38px auto 40px 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 44px 0 0 74px;
+  }
+}
+
+.app-group__item {
+  margin-bottom: 30px;
 }
 
 .app-group__label {
   @include text(400, 18px, 30px);
+  cursor: pointer;
+}
+
+.app-group__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.app-group__input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.app-group__input + label::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid $table-border;
+  border-radius: 50%;
+  margin-right: 30px;
+  background: $bg-primary;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+.app-group__input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 33px;
+  background-color: $text-info;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 723px;
+  }
 }

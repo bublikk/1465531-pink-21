@@ -1,15 +1,36 @@
-@media (min-width: $tablet-width) {
-  .message-group {
+.message-group {
+  @media (min-width: $tablet-width) {
     order: -2;
+    text-align: center;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .message-group {
+  @media (min-width: $desktop-width) {
     width: 936px;
   }
 }
 
 .message-group__textarea {
   @include text(400, 18px, 30px);
+  width: 255px;
+  height: 184px;
+  border: 2px solid $table-border;
+  border-radius: 2px;
+  margin: 7px auto 0;
+  padding: 14px 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    height: 173px;
+    margin: 31px auto 41px;
+    text-align: center;
+    padding: 15px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 796px;
+    height: 110px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 27px 0 28px 0;
+  }
 }

@@ -1,12 +1,45 @@
-@media (min-width: $tablet-width) {
-  .contacts-group {
+.contacts-group {
+  @media (min-width: $tablet-width) {
     order: -4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 936px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts-group {
-    width: 936px;
+@media (min-width: $tablet-width) {
+  .contacts-group > legend {
+    display: inline-block;
+    text-align: center;
+    padding: 0.2% 0.4%;
+    width: 40%;
+    margin: 0 29.5%;
+  }
+}
+
+.contacts-group__list {
+  margin: 29px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    margin: 26px auto -12px;
+  }
+}
+
+.contacts-group__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
   }
 }
 
@@ -14,6 +47,45 @@
   @include text(400, 14px, 30px);
   color: $text-info;
   text-transform: uppercase;
+  margin: 0 0 5px 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 20px 0 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 -13px 41px;
+  }
+}
+
+.contacts-group__label--margin-left {
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 -13px 18px;
+  }
+}
+
+.contacts-group__input {
+  border: 2px solid $table-border;
+  border-radius: 2px;
+  width: 256px;
+  padding: 23px 0 20px 20px;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 80%;
+    padding: 15px 0 28px 19px;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 371px;
+  }
+}
+
+.contacts-group__input--margin-left {
+  @media (min-width: $desktop-width) {
+    margin-left: 22px;
+  }
 }
 
 .contacts-group__input::placeholder {

@@ -6,26 +6,105 @@
     flex-flow: row wrap;
     justify-content: center;
     width: 940px;
-    margin: auto;
   }
 }
 
 .form__group {
-  @media (max-width: $mobile-width-only) {
-    width: 280px;
+  width: 280px;
+  margin: 0 auto 17px;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $table-border;
+    border-radius: 2px;
+    width: 596px;
     margin: auto;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.form__group--personal {
+  @media (min-width: $tablet-width) {
+    width: 618px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 -11px;
+  }
+}
+
+.form__group--achievements-group {
+  margin-bottom: -12px;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 11px;
+    margin-bottom: 18px;
+  }
+}
+
+.form__group--contacts-group {
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: -5px 1px 57px 0;
+  }
+}
+
+.form__group--app-group {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: -20px auto 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    margin: 40px 0 0 60px;
+    padding: 0 0 48px 0;
+  }
+}
+
+.form__group--message-group {
+  margin: 38px auto 7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px auto 47px;
+  }
+}
+
+.form__group--submit-group {
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
     width: 620px;
-    margin: auto;
+    margin: auto auto 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto auto 7px;
   }
 }
 
 .form__legend {
   @include text(400, 14px, 18px);
+  width: 218px;
   color: $text-info;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0 4.4%;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .form__legend--hidden {
@@ -39,6 +118,7 @@
 @media (max-width: $mobile-width-only) {
   .form__wrapper--custom-background {
     background-color: $bg-secondary;
+    padding-top: 38px;
   }
 
   .form__group {
