@@ -5,10 +5,10 @@
 }
 
 .app-group__list {
-  margin: 32px auto 25px;
+  margin: 30px auto 25px;
 
   @media (min-width: $tablet-width) {
-    margin: 38px auto 40px 49px;
+    margin: 40px auto 38px 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +46,7 @@
   flex-grow: 0;
   border: 2px solid $table-border;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 31px;
   background: $bg-primary;
   background-repeat: no-repeat;
   background-position: center center;

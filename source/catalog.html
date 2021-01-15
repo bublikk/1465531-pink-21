@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body catalog-page">
-  <header class="page-header">
+  <header class="page-header page-header--size-s">
     <!--
       Классы, которые переключают состояние меню:
       main-nav--opened открывает меню
@@ -16,12 +16,13 @@
     <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
       <div class="main-nav__container">
-      <a class="main-nav__logo logo" href="index.html">
-        <picture class="logo__img">
-          <source media="(min-width: 320px)" srcset="img/pink.svg">
-          <img src="img/pink.svg" width="74" height="23" alt="«Пинк»">
-        </picture>
-      </a>
+        <a class="main-nav__logo logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img class="logo__img" src="img/logotype-mobile.svg" alt="«Пинк»">
+          </picture>
+        </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>

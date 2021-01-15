@@ -15,15 +15,15 @@
   height: 184px;
   border: 2px solid $table-border;
   border-radius: 2px;
-  margin: 7px auto 0;
-  padding: 14px 0 0 22px;
+  margin: 12px auto 0;
+  padding: 14px 0 0 21px;
 
   @media (min-width: $tablet-width) {
     width: 496px;
     height: 173px;
-    margin: 31px auto 41px;
+    margin: 33px auto 36px;
     text-align: center;
-    padding: 15px 0 0;
+    padding: 15px 2px 0 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -28,16 +28,16 @@
 .form__group--personal {
   @media (min-width: $tablet-width) {
     width: 618px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 -11px;
+    margin-bottom: 3px;
   }
 }
 
 .form__group--achievements-group {
-  margin-bottom: -12px;
+  margin-bottom: -16px;
 
   @media (min-width: $tablet-width) {
     padding: 3px 11px;
@@ -46,7 +46,7 @@
 }
 
 .form__group--contacts-group {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 59px;
@@ -54,7 +54,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    margin: -5px 1px 57px 0;
+    margin: -8px 1px 59px 0;
   }
 }
 
@@ -67,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     width: 431px;
-    margin: 40px 0 0 60px;
+    margin: 40px 0 0 48px;
     padding: 0 0 48px 0;
   }
 }
@@ -76,6 +76,10 @@
   margin: 38px auto 7px;
 
   @media (min-width: $tablet-width) {
+    margin: 40px auto 50px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 40px auto 47px;
   }
 }
@@ -112,6 +116,12 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
+  }
+}
+
+.form__legend--line {
+  @media (min-width: $desktop-width) {
+    padding: 0 7.4% 0 4.4%;
   }
 }
 
