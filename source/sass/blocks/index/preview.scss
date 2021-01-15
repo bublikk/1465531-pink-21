@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("/img/phone-tablet.png");
     background-repeat: no-repeat;
-    background-position: 50% 30px;
+    background-position: 50% 18px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/phone-tablet@2x.png");
@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("/img/phone-desktop.png");
     background-repeat: no-repeat;
-    background-position: 97% 49px;
+    background-position: 97% 38px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/phone-desktop@2x.png");
@@ -34,23 +34,21 @@
 .preview__paragraph {
   @include centerer;
   height: 320px;
-  background: url("/img/hand.png");
-  background-size: 320px 286px;
   background-repeat: no-repeat;
   margin-bottom: 52px;
 
   @media (min-width: $tablet-width) {
-    height: 0;
+    display: none;
   }
 }
 
 .preview__wrapper {
   background-color: $bg-info;
-  padding: 30px 0 19px;
+  padding: 28px 0 19px;
 
   @media (min-width: $tablet-width) {
     background-color: inherit;
-    padding: 13px 0 96px 0;
+    padding: 0 0 95px 0;
     margin: 0 auto;
   }
 
@@ -69,7 +67,7 @@
     flex-direction: column;
     justify-content: start;
     width: 300px;
-    margin-left: 20px;
+    margin: 58px 0 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +84,7 @@
   border-radius: 29px;
   background-color: inherit;
   padding: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   a {
     @include text(700, 18px, 18px);

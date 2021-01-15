@@ -13,13 +13,16 @@
 .slider__text {
   @include text(400, 14px, 30px);
   position: relative;
+  padding: 16px 0 14px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: -8px;
+      @include text(400, 18px, 30px);
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: -11px;
+      width: 688px;
+      margin: 0 auto -4px;
   }
 }
 
@@ -32,8 +35,8 @@
     width: 79px;
     height: 63px;
     z-index: 10;
-    top: -92px;
-    left: 301px;
+    top: -96px;
+    left: 306px;
   }
 }
 
@@ -44,7 +47,8 @@
 
   @media (min-width: $tablet-width) {
     @include text(700, 20px, 30px);
-    margin-bottom: -15px;
+    padding: 0;
+    margin-bottom: -12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,19 +75,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .slider__text {
-    @include text(400, 18px, 30px);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider__text {
-    width: 688px;
-    margin: 0 auto -13px;
-  }
-}
-
 .slider__arrow {
   background-color: $bg-primary;
   border-color: $bg-table;
@@ -107,14 +98,14 @@
 .slider__arrow—-left {
   transform: rotate(135deg);
   position: absolute;
-  top: 33px;
+  top: 50px;
   left: 7px;
 }
 
 .slider__arrow—-right {
   transform: rotate(-45deg);
   position: absolute;
-  top: 33px;
+  top: 50px;
   left: 903px;
 }
 

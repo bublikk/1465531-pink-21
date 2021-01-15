@@ -1,18 +1,12 @@
-/*
 .page-header {
-  background-image: url("../img/back.png");
-  background-repeat: repeat;
-}
-*/
-
-.page-header {
+  min-height: 462px;
   background: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/back-mobile@2x.jpg");
+    background-size: 320px auto;
   }
 
   @media (min-width: $tablet-width) {

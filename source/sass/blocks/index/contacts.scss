@@ -2,6 +2,8 @@
   width: 280px;
   margin: auto;
   text-align: center;
+  z-index: 10;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -21,7 +23,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 1px 0;
+    margin: 0 0 2px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,15 +105,12 @@
     background-repeat: no-repeat;
     width: 1200px;
     height: 123px;
-    z-index: 10;
-    top: -12px;
-    left: -138px;
+    top: -85px;
+    left: -172px;
 
     @media (min-width: $tablet-width) {
-      width: 1200px;
-      height: 123px;
-      top: -42px;
-      left: 62px;
+      top: -56px;
+      left: 0;
     }
 
     @media (min-width: $desktop-width) {
