@@ -10,16 +10,15 @@
 
 @media (min-width: $tablet-width) {
   .contacts-group > legend {
-    display: inline-block;
+    display: block;
     text-align: center;
     padding: 0.2% 0.4%;
     width: 40%;
-    margin: 0 29.5%;
   }
 }
 
 .contacts-group__list {
-  margin: 29px auto;
+  margin: 31px auto 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: -11px;
@@ -33,13 +32,18 @@
 }
 
 .contacts-group__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column-reverse;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 7px 28px -14px;
   }
 }
 
@@ -47,7 +51,7 @@
   @include text(400, 14px, 30px);
   color: $text-info;
   text-transform: uppercase;
-  margin: 0 0 5px 22px;
+  margin: 0 0 5px 24px;
 
   @media (min-width: $tablet-width) {
     margin: 10px 20px 0 67px;
@@ -73,12 +77,62 @@
 
   @media (min-width: $tablet-width) {
     width: 80%;
-    padding: 15px 0 28px 19px;
+    padding: 24px 0 20px 18px;
     margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 371px;
+    width: 350px;
+  }
+}
+
+.contacts-group__item:nth-child(1)::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/phone-icon.svg");
+    background-color: $table-border;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 61px;
+    height: 61px;
+    z-index: 10;
+    cursor: pointer;
+    top: 2px;
+    right: 50px;
+
+    @media (min-width: $desktop-width) {
+      width: 62px;
+      height: 62px;
+      right: 0;
+    }
+  }
+}
+
+.contacts-group__item:nth-child(2)::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("/img/mail-icon.svg");
+    background-color: $table-border;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    width: 61px;
+    height: 61px;
+    z-index: 10;
+    cursor: pointer;
+    top: 1px;
+    right: 50px;
+
+    @media (min-width: $desktop-width) {
+      width: 62px;
+      height: 62px;
+      right: 0;
+    }
   }
 }
 

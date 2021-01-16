@@ -158,14 +158,15 @@
 }
 
 .page__subtitle {
-  margin: 46px auto 19px;
+  padding: 30px 0 10px;
+  margin: 14px auto 8px;
 
   @media (min-width: $tablet-width) {
-    margin: 92px auto 18px;
+    margin: 60px auto 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 92px auto 33px;
+    margin: 62px auto 22px;
   }
 }
 

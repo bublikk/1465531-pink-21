@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body form-page">
-  <header class="page-header">
+  <header class="page-header page-header--size-s">
     <!--
       Классы, которые переключают состояние меню:
       main-nav--opened открывает меню
@@ -16,12 +16,13 @@
     <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__wrapper">
       <div class="main-nav__container">
-      <a class="main-nav__logo logo" href="index.html">
-        <picture class="logo__img">
-          <source media="(min-width: 320px)" srcset="img/pink.svg">
-          <img src="img/pink.svg" width="74" height="23" alt="«Пинк»">
-        </picture>
-      </a>
+        <a class="main-nav__logo logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+            <img class="logo__img" src="img/logotype-mobile.svg" alt="«Пинк»">
+          </picture>
+        </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -82,7 +83,7 @@
           </fieldset>
           <div class="form__wrapper form__wrapper--custom-background achievements-group">
           <fieldset class="form__group form__group--achievements-group">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <legend class="form__legend form__legend--line">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__list achievements-group__list" role="none">
               <li class="achievements-group__item achievements-group__item--order-6">
                   <input class="achievements-group__input" type="checkbox" name="take-selfie" id="filter-take-selfie" checked>
@@ -157,13 +158,12 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__inner">
-        <a class="page-footer__logo" href="index.html">
-          <picture class="page-footer__img">
-            <source media="(min-width: 320px)" srcset="https://via.placeholder.com/59x40">
-            <source media="(min-width: 320px)" srcset="https://via.placeholder.com/74x23">
-            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="«Пинк»">
-          </picture>
-        </a>
+      <a class="page-footer__logo">
+        <picture class="page-footer__img">
+          <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg">
+          <img src="img/logotype-blue-tablet.svg" alt="«Пинк»">
+        </picture>
+      </a>
       <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">

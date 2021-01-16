@@ -12,13 +12,14 @@
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0 10px 50px;
+    margin: 40px 0 10px 48px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 40px 0 10px 45px;
   }
 }
 
@@ -27,6 +28,12 @@
 
   @media (min-width: $desktop-width) {
     width: 260px;
+    margin-right: 20px;
+  }
+}
+
+.achievements-group__item:not(:nth-child(3n)) {
+  @media (min-width: $desktop-width) {
     margin-right: 20px;
   }
 }
@@ -60,7 +67,7 @@
 }
 
 .achievements-group__input:checked + label::before {
-  background-image: url("/img/tick.png");
+  background-image: url("/img/checkbox.svg");
 }
 
 .achievements-group__input:not(:disabled) + label:hover::before {
