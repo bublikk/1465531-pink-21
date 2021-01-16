@@ -25,10 +25,6 @@
   flex-direction: column;
 }
 
-.page-header__main-nav {
-  margin-bottom: 29px;
-}
-
 .page a {
   text-decoration: none;
 }
@@ -68,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 254px;
+    top: 253px;
     left: 0;
   }
 }
@@ -129,7 +125,7 @@
 
 .page__entry-title--margin-bottom {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 29px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $tablet-width) {

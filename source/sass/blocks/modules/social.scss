@@ -4,6 +4,10 @@
 
 .social__item {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .social__link {

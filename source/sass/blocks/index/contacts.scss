@@ -2,6 +2,8 @@
   width: 280px;
   margin: auto;
   text-align: center;
+  z-index: 10;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -21,7 +23,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 1px 0;
+    margin: 0 0 2px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,16 +99,25 @@
   }
 
   &::before {
-    content: url("/img/triangle-white-map.svg");
+    content: "";
     position: absolute;
-    margin: 0;
-    width: 100%;
-    z-index: 10;
-    right: 138px;
+    background-image: url("/img/triangle-white-map.svg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 123px;
+    top: -85px;
+    left: -172px;
 
     @media (min-width: $tablet-width) {
-      right: -33px;
-      top: 7px;
+      top: -56px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1439px;
+      height: 123px;
+      top: 68px;
+      left: 122px;
     }
   }
 }

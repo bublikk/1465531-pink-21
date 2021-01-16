@@ -17,9 +17,10 @@
       <div class="main-nav__wrapper">
       <div class="main-nav__container">
       <a class="main-nav__logo logo">
-        <picture class="logo__img">
-          <source media="(min-width: 320px)" srcset="img/pink.svg">
-          <img src="img/pink.svg" width="74" height="23" alt="«Пинк»">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/logotype-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+          <img class="logo__img" src="img/logotype-mobile.svg" alt="«Пинк»">
         </picture>
       </a>
       <button class="main-nav__toggle" type="button">
@@ -67,19 +68,19 @@
         <li class="preview__item">
           <a class="preview__link" href="https://www.apple.com/ru/app-store/">
             <span class="visually-hidden preview__app-store">App Store</span>
-            <img src="img/app-store.png" width="47" height="56" alt="Ссылка на магазин App Store">
+            <img src="img/app-store.svg" width="47" height="56" alt="Ссылка на магазин App Store">
           </a>
         </li>
         <li class="preview__item">
           <a class="preview__link" href="https://play.google.com/store">
             <span class="visually-hidden preview__google-play">Google Play</span>
-            <img src="img/google-play.png" width="43" height="47" alt="Ссылка на магазин Google Play">
+            <img src="img/google-play.svg" width="43" height="47" alt="Ссылка на магазин Google Play">
           </a>
         </li>
         <li class="preview__item">
           <a class="preview__link" href="https://www.microsoft.com/ru-ru">
             <span class="visually-hidden preview__microsoft-store">Microsoft Store</span>
-            <img src="img/microsoft-store.png" width="44" height="41" alt="Ссылка на магазин Microsoft Store">
+            <img src="img/microsoft-store.svg" width="44" height="41" alt="Ссылка на магазин Microsoft Store">
           </a>
         </li>
       </ul>
@@ -99,15 +100,15 @@
       <div class="features__wrapper">
       <div class="features__inner">
       <ul class="features__list">
-        <li class="features__item">
+        <li class="features__item features__item--screen-1">
           <h3 class="features__title">Поднимает настроение</h3>
           <p class="features__description">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в несколько кликов!</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--screen-2">
           <h3 class="features__title">Меняет мир вокруг</h3>
           <p class="features__description">Сделайте снимок и украсьте&nbsp;его смайликом или&nbsp;текстовой подписью, чтобы усилить&nbsp;эффект</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--screen-3">
           <h3 class="features__title">Заводит новых&nbsp;друзей</h3>
           <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите&nbsp;новых</p>
         </li>
@@ -150,7 +151,7 @@
           <tr class="table__item">
             <th class="table__hidden">&nbsp;</th>
             <th class="table__tariff" scope="col">База<br><span class="table__price">1,99 USD</span></th>
-            <th class="table__tariff" scope="col">Стандарт<br><span class="table__price">3,99 USD</span></th>
+            <th class="table__tariff table__tariff--hit" scope="col">Стандарт<br><span class="table__price">3,99 USD</span></th>
             <th class="table__tariff" scope="col">Анлим<br><span class="table__price">9,99 USD</span></th>
           </tr>
           <tr class="table__item">
@@ -199,8 +200,8 @@
         </ul>
       </div>
       <div class="contacts__map">
-        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.747280970238!2d30.319946764941065!3d59.93633555799412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605322059434!5m2!1sru!2sru"
-        width="320" height="450" style="border:0;" allowfullscreen="" title="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, 19/8" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1729.976608899177!2d30.321021588377!3d59.9365706414969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1610699843526!5m2!1sru!2sru"
+        width="320" height="200" style="border:0;" allowfullscreen="" title="Офис компании по адресу Санкт-Петербург, ул. Большая Конюшенная, 19/8" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -208,9 +209,8 @@
     <div class="page-footer__inner">
         <a class="page-footer__logo">
           <picture class="page-footer__img">
-            <source media="(min-width: 320px)" srcset="https://via.placeholder.com/59x40">
-            <source media="(min-width: 320px)" srcset="https://via.placeholder.com/74x23">
-            <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="«Пинк»">
+            <source media="(min-width: 960px)" srcset="img/logotype-blue-desktop.svg">
+            <img src="img/logotype-blue-tablet.svg" alt="«Пинк»">
           </picture>
         </a>
       <div class="page-footer__social social">

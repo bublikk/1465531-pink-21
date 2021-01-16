@@ -1,3 +1,9 @@
+.reviews {
+  position: relative;
+  z-index: 20;
+  background: $bg-primary;
+}
+
 .reviews__wrapper {
   position: relative;
   width: 280px;
@@ -24,13 +30,13 @@
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    top: 239px;
+    top: 252px;
     left: -486px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 222px;
-    left: -131px;
+    top: 241px;
+    left: -129px;
   }
 }
 
