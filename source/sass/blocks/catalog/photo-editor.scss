@@ -24,3 +24,10 @@
     margin: 66px auto 36px 80px;
   }
 }
+
+.photo-editor__img {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 400px;
+  }
+}

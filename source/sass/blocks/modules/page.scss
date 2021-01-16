@@ -11,7 +11,6 @@
   align-content: start;                            // поэтому код закомментирован, пока не разберусь с таблицей
 
   min-width: 320px;
-  max-width: 1200px;
   margin: auto;
   padding: 0;
 
@@ -158,6 +157,7 @@
 }
 
 .page__subtitle {
+  width: 280px;
   padding: 30px 0 10px;
   margin: 14px auto 8px;
 
@@ -170,7 +170,24 @@
   }
 }
 
+.page__subtitle--catalog {
+  width: 250px;
+  margin: 14px auto 41px;
+
+  @media (min-width: $tablet-width) {
+    margin: 14px auto 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 14px auto 77px;
+  }
+}
+
 .page__footer {
   @include centerer;
   text-align: center;
+}
+
+.page__intro {
+  margin-bottom: 33px;
 }

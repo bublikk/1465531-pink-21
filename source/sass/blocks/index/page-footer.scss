@@ -18,14 +18,14 @@
 .page-footer__logo {
   width: 145px;
   height: 40px;
-  margin: 37px auto 26px;
+  margin: 39px auto 26px;
 
   @media (min-width: $tablet-width) {
     margin: 0 70px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 230px 0 0;
+    margin: 0 231px 0 0;
   }
 }
 
@@ -37,20 +37,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 22px -4px 0 0;
+    margin: 22px -3px 0 0;
   }
 }
 
 .page-footer__copyright {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 0 auto 34px;
 
   @media (min-width: $tablet-width) {
     margin: 12px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 12px 0 0 226px;
+    margin: 19px 0 0 226px;
   }
 }
