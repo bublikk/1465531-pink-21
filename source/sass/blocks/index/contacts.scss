@@ -114,10 +114,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 1439px;
-      height: 123px;
-      top: 68px;
-      left: 122px;
+      padding-top: 20%;
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      background-size: 100% auto;
     }
   }
 }
