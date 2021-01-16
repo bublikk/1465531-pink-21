@@ -66,6 +66,7 @@
 .gallery__link--full-width::after {
   content: "Панорама дня";
   position: absolute;
+
   @include text(700, 12px, 36px);
   text-align: center;
   text-transform: uppercase;
@@ -226,6 +227,7 @@
 
 .gallery__likes {
   position: relative;
+
   @include text(400, 12px, 24px);
   color: $text-info;
   text-transform: uppercase;
