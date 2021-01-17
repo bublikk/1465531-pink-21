@@ -1,6 +1,17 @@
 .button-group {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 41px 48px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 0 33px 91px;
   }
 }
 
@@ -24,19 +35,13 @@
 }
 
 .button-group__upload {
+  margin-bottom: 12px;
+
   @media (min-width: $tablet-width) {
-    margin: auto auto 25px 67px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 -23px 0 110px;
-  }
-}
-
-.button-group__cancel {
-  margin-bottom: 41px;
-
-  @media (min-width: $tablet-width) {
-    margin: auto auto 53px 67px;
+    margin-right: 43px;
   }
 }

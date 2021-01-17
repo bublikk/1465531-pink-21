@@ -2,11 +2,11 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 64px;
+    margin-bottom: 8px;
   }
 }
 
@@ -14,9 +14,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
 
   @media (min-width: $desktop-width) {
     justify-content: center;
+  }
+}
+
+.gallery__item:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
   }
 }
 
@@ -24,7 +32,11 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
   }
 }
 
@@ -46,6 +58,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .gallery__link {
@@ -53,7 +69,32 @@
 }
 
 .gallery__link--full-width {
+  position: relative;
   text-align: center;
+}
+
+.gallery__link--full-width::after {
+  content: "Панорама дня";
+  position: absolute;
+
+  @include text(700, 12px, 36px);
+  text-align: center;
+  text-transform: uppercase;
+  background: $text-info;
+  color: $text-secondary;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  right: 21px;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 55px;
+    right: 130px;
+  }
 }
 
 .gallery__img {
@@ -83,6 +124,8 @@
 }
 
 .gallery__inner {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   background-color: $bg-secondary;
   padding-bottom: 7px;
@@ -91,14 +134,15 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 100%;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
   }
 }
 
 .gallery__inner--full-width {
   @media (min-width: $tablet-width) {
     width: 620px;
-    padding-bottom: 8px;
+    padding: 12px 0 7px;
+    margin: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,68 +150,48 @@
   }
 }
 
-.gallery__inner--padding {
-  padding-bottom: 9px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 4px;
-    margin-bottom: 27px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.gallery__inner--margin {
-  @media (min-width: $desktop-width) {
-    margin-top: 37px;
-  }
-}
-
 .gallery__info {
+  position: relative;
+
   @include text;
   width: 249px;
   margin: -1px auto auto 17px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 18px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin: 15px auto 17px 30px;
+    padding: 0;
+    margin: 23px auto 17px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 15px auto 17px 28px;
+    margin: 24px auto 17px 27px;
   }
 }
 
 .gallery__info--full-width {
-  padding-top: 6px;
+  padding: 19px 0 48px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     width: 560px;
-    padding-top: 11px;
+    padding: 11px 0 0;
     margin: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 882px;
+    width: 884px;
+    padding-top: 13px;
   }
 }
 
 .gallery__autor {
   @include text(300, 12px, 24px);
   text-transform: uppercase;
-}
-
-.gallery__autor--full-width {
-  @media (min-width: $tablet-width) {
-    margin-right: 303px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 623px;
-  }
+  margin: 0 0 1em 0;
 }
 
 .gallery__span {
@@ -177,8 +201,11 @@
 
 .gallery__comment {
   width: 253px;
-  order: 3;
   margin: -12px auto -1px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
 }
 
 .gallery__comment--full-width {
@@ -193,13 +220,58 @@
   }
 }
 
+.gallery__comment--size {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 .gallery__likes {
+  position: relative;
+  margin-bottom: 13px;
+
   @include text(400, 12px, 24px);
   color: $text-info;
   text-transform: uppercase;
   margin-left: 31px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    margin: auto 0 0;
+  }
+}
+
+.gallery__wrapper--full-width .gallery__likes {
+  position: absolute;
+  top: 138px;
+  right: 128px;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+    right: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 32px;
+  }
+}
+
+.gallery__wrapper--full-width .gallery__likes::before {
+  right: -29px;
+}
+
+.gallery__likes::before {
+  content: "";
+  position: absolute;
+  background: url("/img/heart.svg");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  cursor: pointer;
+  top: 7px;
+  left: -31px;
+
+  @media (min-width: $tablet-width) {
+    left: auto;
+    right: 9px;
   }
 }

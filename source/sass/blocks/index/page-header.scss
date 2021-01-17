@@ -30,4 +30,9 @@
 
 .page-header--size-s {
   min-height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    padding-bottom: 51px;
+  }
 }
