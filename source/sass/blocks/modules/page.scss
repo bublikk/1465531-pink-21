@@ -6,15 +6,9 @@
 }
 
 .page__body {
-<<<<<<< HEAD
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  align-content: start;                            
-=======
-  display: grid;                                   // "аппендикс" ввиде таблицы, ширина которой больше контейнера,
-  grid-template-rows: min-content 1fr min-content; // создает внешний отступ справа от грид-элементов
-  align-content: flex-start;                            // поэтому код закомментирован, пока не разберусь с таблицей
->>>>>>> 72d6e2e205e25401fb191f465a291adc3b3486cc
+  align-content: start;
 
   min-width: 320px;
   margin: auto;
