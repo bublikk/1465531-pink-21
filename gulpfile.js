@@ -25,6 +25,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
@@ -161,12 +162,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   gulp.parallel(
-    styles,
-    html,
-    scripts,
-    sprite,
-    copy,
-    createWebp
+    build
   ),
   gulp.series(
     server,
