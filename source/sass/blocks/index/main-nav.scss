@@ -16,6 +16,15 @@
   }
 }
 
+.main-nav__logo:hover {
+  color: $text-info;
+  opacity: 1;
+}
+
+.main-nav__logo:active {
+  opacity: 0.3;
+}
+
 .main-nav__wrapper {
   position: relative;
 
@@ -43,7 +52,7 @@
     flex-grow: 1;
     position: static;
     background: none;
-    margin-top: 44px;
+    margin-top: 46px;
   }
 }
 
@@ -72,14 +81,12 @@
     @include text(700, 18px, 32px);
     color: $text-secondary;
     text-transform: uppercase;
-
-    @media (max-width: $tablet-width) {
-      padding: 15px;
-    }
+    padding: 15px;
 
     @media (min-width: $desktop-width) {
       @include text(400, 18px, 18px);
       text-transform: none;
+      padding: 0;
     }
   }
 
@@ -96,7 +103,7 @@
   }
 }
 
-.main-nav__item--underscore {
+.main-nav__item--active {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $bg-primary;
     padding-bottom: 7px;
@@ -104,99 +111,110 @@
 }
 
 /*Стили для раскрывающегося меню*/
-@media (max-width: $tablet-width) {
-  .main-nav--opened .main-nav__wrapper {
-    background-color: $bg-table;
-  }
 
-  .main-nav__toggle {
-    display: block;
-    position: relative;
-    width: 50px;
-    height: 24px;
-    background-color: transparent;
-    cursor: pointer;
+.main-nav--opened .main-nav__wrapper {
+  background-color: $bg-table;
+}
+
+.main-nav__toggle {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $bg-primary;
+  box-shadow: 0 10px 0 0 $bg-primary, 0 20px 0 0 $bg-primary;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade($bg-primary, 30%);
+  box-shadow:
+    0 8px 0 0 $bg-primary,
+    0 16px 0 0 $bg-primary;
+}
+
+.main-nav__list a {
+  display: block;
+  border-top: 1px solid rgba($text-secondary, 0.15);
+  border-bottom: 1px solid $text-primary;
+
+  @media (min-width: $desktop-width) {
     border: none;
-    outline: none;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 17px;
-    }
   }
+}
 
-  .main-nav--closed .main-nav__toggle::before {
+.main-nav__item--border-top {
+  border-top: 1px solid $text-primary;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
-    top: -1px;
-    right: 0;
-    width: 50px;
-    height: 4px;
-    background-color: $bg-primary;
-    box-shadow: 0 10px 0 0 $bg-primary, 0 20px 0 0 $bg-primary;
+    top: 12px;
+    right: -4px;
+    width: 31px;
+    height: 3px;
+    background-color: $text-secondary;
   }
 
-  .main-nav--closed .main-nav__toggle:active::before {
-    background-color: fade($bg-primary, 30%);
-    box-shadow:
-      0 8px 0 0 $bg-primary,
-      0 16px 0 0 $bg-primary;
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
   }
 
-  .main-nav__list a {
-    display: block;
-    border-top: 1px solid rgba($text-secondary, 0.15);
-    border-bottom: 1px solid $text-primary;
+  &::after {
+    transform: rotate(-45deg);
   }
 
-  .main-nav__item--border-top {
-    border-top: 1px solid $text-primary;
+  &:active::before,
+  &:active::after {
+    background-color: fade($text-secondary, 30%);
   }
+}
 
-  .main-nav--opened .main-nav__toggle {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 12px;
-      right: -4px;
-      width: 31px;
-      height: 3px;
-      background-color: $text-secondary;
-    }
+.main-nav--closed .main-nav__item {
+  display: none;
 
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:active::before,
-    &:active::after {
-      background-color: fade($text-secondary, 30%);
-    }
-  }
-
-  .main-nav--closed .main-nav__item {
-    display: none;
-  }
-
-  /*Пошла реализация мобильного меню без JS*/
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav--nojs .main-nav__inner {
-    position: static;
-    min-height: 0;
-    margin-top: -11px;
-  }
-
-  .main-nav--nojs .main-nav__item {
+  @media (min-width: $desktop-width) {
     display: block;
   }
+}
+
+/*Пошла реализация мобильного меню без JS*/
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__inner {
+  position: static;
+  min-height: 0;
+  margin-top: -11px;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
 }
 
 @media (min-width: $desktop-width) {

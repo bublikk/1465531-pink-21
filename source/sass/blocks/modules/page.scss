@@ -4,17 +4,6 @@
   overflow-x: hidden;
   box-sizing: border-box;
 
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: flex-start;
-  min-width: 320px;
-  margin: auto;
-  padding: 0;
-
-  @include text;
-  color: $bg-table;
-  background-color: $bg-primary;
-
   a {
     text-decoration: none;
     color: $text-info;
@@ -24,6 +13,25 @@
     list-style: none;
     padding-left: 0;
   }
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+
+  min-width: 320px;
+  margin: auto;
+  padding: 0;
+
+  @include text;
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
 }
 
 .page__entry-wrapper {
@@ -150,11 +158,11 @@
   margin: 14px auto 8px;
 
   @media (min-width: $tablet-width) {
-    margin: 13px auto 9px;
+    margin: 60px auto 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 13px auto 22px;
+    margin: 62px auto 22px;
   }
 }
 
@@ -174,14 +182,6 @@
 .page__footer {
   @include centerer;
   text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
-  }
 }
 
 .page__intro {

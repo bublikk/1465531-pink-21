@@ -1,16 +1,50 @@
-.popup__wrapper {
-  @media (min-width: $mobile-width-only) {
-    width: 320px;
-    margin: auto;
-  }
+.popup__page {
+  position: fixed;
+  display: none;
+  background-color: $bg-primary;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 300;
+}
+
+.popup--error-message {
+  width: 320px;
+  height: 289px;
 
   @media (min-width: $tablet-width) {
     width: 460px;
+    height: 363px;
   }
 
   @media (min-width: $desktop-width) {
     width: 780px;
+    height: 377px;
   }
+}
+
+.popup--success-message {
+  width: 320px;
+  height: 380px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 432px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    height: 377px;
+  }
+}
+
+.popup__wrapper {
+  width: 100%;
+  margin: auto;
 }
 
 .popup__inner {
@@ -22,6 +56,10 @@
 .popup__inner--custom-background {
   background-color: $bg-secondary;
   padding: 52px 0 52px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0;
+  }
 }
 
 .popup__inner--background-hidden {
@@ -37,15 +75,22 @@
 .popup__title {
   @include text(700, 18px, 24px);
   text-align: center;
+  color: $text-primary;
+  margin: 40px auto 40px;
 
   @media (min-width: $tablet-width) {
     @include text(700, 30px, 40px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
   }
 }
 
 .popup__text {
   @include text(400, 14px, 24px);
   text-align: center;
+  color: $bg-table;
   width: 280px;
   margin: auto;
 
@@ -56,10 +101,14 @@
 
   @media (min-width: $desktop-width) {
     width: 378px;
-    margin-bottom: 40px;
+    margin-bottom: 56px;
   }
 }
 
 .popup__text--custom-background {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }

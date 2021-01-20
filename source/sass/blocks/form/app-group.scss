@@ -22,6 +22,7 @@
 
 .app-group__label {
   position: relative;
+
   @include text(400, 18px, 30px);
   cursor: pointer;
 }
