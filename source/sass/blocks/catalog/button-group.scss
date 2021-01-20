@@ -52,6 +52,7 @@
 }
 
 .button-group__upload:active {
+  background-color: $text-info;
   color: rgba($text-secondary, 0.3);
 }
 

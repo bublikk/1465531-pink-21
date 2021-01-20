@@ -21,6 +21,7 @@
 }
 
 .app-group__label {
+  position: relative;
   @include text(400, 18px, 30px);
   cursor: pointer;
 }
@@ -62,17 +63,10 @@
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 33px;
+  left: 12px;
+  right: 12px;
   background-color: $text-info;
   border-radius: 50%;
-
-  @media (min-width: $tablet-width) {
-    left: 93px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 956px;
-  }
 }
 
 .app-group__input:not(:disabled) + label:hover::before {

@@ -95,16 +95,14 @@
 
 .contacts__map {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
     margin: -36px auto auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     margin: -26px auto auto;
   }
 

@@ -14,13 +14,24 @@
   border-color: $bg-table;
 }
 
-.form input:active,
-.form textarea:active {
-  border-color: $text-info;
+.form input:focus,
+.form textarea:focus {
+  outline-color: $text-info;
+}
+
+.form input {
+  @include text(400, 18px, 30px);
+  color: $bg-table;
+  opacity: 1;
 }
 
 .form input::placeholder {
   @include text(400, 18px, 30px);
+  color: $bg-table;
+  opacity: 1;
+}
+
+.form textarea {
   color: $bg-table;
   opacity: 1;
 }

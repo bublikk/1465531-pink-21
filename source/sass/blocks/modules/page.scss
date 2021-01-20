@@ -150,11 +150,11 @@
   margin: 14px auto 8px;
 
   @media (min-width: $tablet-width) {
-    margin: 60px auto 9px;
+    margin: 13px auto 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 62px auto 22px;
+    margin: 13px auto 22px;
   }
 }
 
@@ -171,13 +171,17 @@
   }
 }
 
-.page__main {
-  margin: auto;
-}
-
 .page__footer {
   @include centerer;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .page__intro {
