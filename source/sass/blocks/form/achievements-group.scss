@@ -78,6 +78,14 @@
   border-color: $text-info;
 }
 
+.achievements-group__input:disabled + label,
+.achievements-group__input:checked:disabled + label,
+.achievements-group__input:disabled:hover + label,
+.achievements-group__input:disabled:focus + label {
+    opacity: 0.25;
+    pointer-events: none;
+}
+
 .achievements-group__label {
   @include text (400, 18px, 30px);
   cursor: pointer;

@@ -45,3 +45,28 @@
     margin-right: 43px;
   }
 }
+
+.button-group__upload:hover {
+  background-color: $text-info;
+  color: $text-secondary;
+}
+
+.button-group__upload:active {
+  color: rgba($text-secondary, 0.3);
+}
+
+.button-group__cancel {
+  color: rgba($bg-table, 0.1);
+  border-color: rgba($bg-table, 0.1);
+}
+
+.button-group__cancel:hover {
+  color: rgba($bg-table, 0.3);
+  border-color: rgba($bg-table, 0.3);
+}
+
+.button-group__cancel:active {
+  color: rgba($text-secondary, 0.3);
+  background-color: rgba($bg-table, 0.3);
+  border: none;
+}

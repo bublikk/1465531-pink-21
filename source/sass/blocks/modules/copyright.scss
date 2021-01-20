@@ -11,5 +11,22 @@
   display: inline-block;
   width: 27px;
   height: 34px;
-  background: url("/img/htmlacademy.svg") no-repeat center;
+
+  svg {
+    fill: $text-info;
+  }
+}
+
+.copyright__link:hover {
+
+  svg {
+    fill: $bg-table;
+  }
+}
+
+.copyright__link:active {
+
+  svg {
+    fill: rgba($bg-table, 0.3)
+  }
 }

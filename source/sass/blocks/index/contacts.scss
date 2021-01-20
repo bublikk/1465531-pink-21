@@ -43,6 +43,16 @@
   margin: 0;
 }
 
+.contacts__text--email a:hover {
+  color: $text-primary;
+  text-decoration: revert;
+}
+
+.contacts__text--email a:active {
+  text-decoration: none;
+  color: rgba($text-primary, 0.3);
+}
+
 .contacts__list {
   display: flex;
   flex-direction: column;

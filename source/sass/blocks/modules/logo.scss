@@ -1,0 +1,43 @@
+.logo__mobile {
+  fill: $bg-primary;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $bg-primary;
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $bg-primary;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.logo__star {
+  fill: $text-info;
+}

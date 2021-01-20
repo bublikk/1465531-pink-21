@@ -77,8 +77,7 @@
 
 .slider__arrow {
   background-color: $bg-primary;
-  border-color: $bg-table;
-  opacity: 0.3;
+  border-color: rgba($bg-table, 0.3);
   width: 30px;
   height: 30px;
   border-width: 0 1px 1px 0;
@@ -109,6 +108,16 @@
   left: 903px;
 }
 
+.slider__arrow—-left:hover,
+.slider__arrow—-right:hover {
+  border-color: rgba($bg-table, 0.6);
+}
+
+.slider__arrow—-left:active,
+.slider__arrow—-right:active {
+  border-color: rgba($bg-table, 0.1);
+}
+
 .slider__toggles {
   display: flex;
   justify-content: space-between;
@@ -129,6 +138,14 @@
   background-color: rgba($bg-table, 0.3);
   border: inherit;
   cursor: pointer;
+}
+
+.slider__toggle:hover {
+  background-color: rgba($bg-table, 0.6);
+}
+
+.slider__toggle:active {
+  background-color: rgba($bg-table, 0.1);
 }
 
 .slider__toggle--current {

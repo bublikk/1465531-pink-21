@@ -9,6 +9,27 @@
   }
 }
 
+.form input:hover,
+.form textarea:hover {
+  border-color: $bg-table;
+}
+
+.form input:active,
+.form textarea:active {
+  border-color: $text-info;
+}
+
+.form input::placeholder {
+  @include text(400, 18px, 30px);
+  color: $bg-table;
+  opacity: 1;
+}
+
+.form textarea::placeholder {
+  color: $bg-table;
+  opacity: 1;
+}
+
 .form__group {
   width: 280px;
   margin: 0 auto 17px;

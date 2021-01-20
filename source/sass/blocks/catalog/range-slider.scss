@@ -120,6 +120,11 @@
   }
 }
 
+.range-slider__group:not(.range-slider__group--active) svg:hover {
+  fill: $bg-table;
+  opacity: 0.5;
+}
+
 .range-slider__label::before {
   content: "";
   display: block;
@@ -173,6 +178,7 @@
   position: absolute;
   top: 78px;
   left: 175px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 4px;
@@ -183,6 +189,10 @@
     top: 14px;
     left: 161px;
   }
+}
+
+.range-slider__label:active::after {
+  background-color: $text-info;
 }
 
 .range-slider__label--fill::after,
