@@ -18,15 +18,13 @@
 }
 
 .copyright__link:hover {
-
   svg {
     fill: $bg-table;
   }
 }
 
 .copyright__link:active {
-
   svg {
-    fill: rgba($bg-table, 0.3)
+    fill: rgba($bg-table, 0.3);
   }
 }

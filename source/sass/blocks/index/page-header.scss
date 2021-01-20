@@ -1,5 +1,7 @@
 .page-header {
   min-height: 462px;
+  display: flex;
+  flex-direction: column;
   background: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;

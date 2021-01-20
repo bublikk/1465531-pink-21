@@ -154,9 +154,3 @@
   background-color: $bg-primary;
   border: 3px solid $bg-table;
 }
-
-.slider__toggles--hidden {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}

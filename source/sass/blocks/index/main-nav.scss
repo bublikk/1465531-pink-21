@@ -99,7 +99,7 @@
     color: rgba($text-info, 0.3);
 
     @media (min-width: $desktop-width) {
-      color: rgba($bg-primary, 0.3)
+      color: rgba($bg-primary, 0.3);
     }
   }
 }
@@ -215,7 +215,7 @@
 
 .main-nav--closed .main-nav__toggle:hover::before {
   background-color: $text-info;
-  box-shadow: 0 10px 0 0 $text-info,0 20px 0 0 $text-info;
+  box-shadow: 0 10px 0 0 $text-info, 0 20px 0 0 $text-info;
 }
 
 .main-nav--opened .main-nav__toggle:hover::before,

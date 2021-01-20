@@ -87,6 +87,6 @@
 .app-group__input:checked:disabled + label,
 .app-group__input:disabled:hover + label,
 .app-group__input:disabled:focus + label {
-    opacity: 0.25;
-    pointer-events: none;
+  opacity: 0.25;
+  pointer-events: none;
 }

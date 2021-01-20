@@ -3,13 +3,10 @@
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
-}
 
-.page__body {
-  display: grid;                                   // "аппендикс" ввиде таблицы, ширина которой больше контейнера,
-  grid-template-rows: min-content 1fr min-content; // создает внешний отступ справа от грид-элементов
-  align-content: flex-start;                            // поэтому код закомментирован, пока не разберусь с таблицей
-
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
   min-width: 320px;
   margin: auto;
   padding: 0;
@@ -17,21 +14,16 @@
   @include text;
   color: $bg-table;
   background-color: $bg-primary;
-}
 
-.page__header {
-  display: flex;
-  flex-direction: column;
-}
+  a {
+    text-decoration: none;
+    color: $text-info;
+  }
 
-.page a {
-  text-decoration: none;
-  color: $text-info;
-}
-
-.page ul {
-  list-style: none;
-  padding-left: 0;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 .page__entry-wrapper {
@@ -177,6 +169,10 @@
   @media (min-width: $desktop-width) {
     margin: 14px auto 77px;
   }
+}
+
+.page__main {
+  margin: auto;
 }
 
 .page__footer {
