@@ -5,6 +5,7 @@
   background: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/back-mobile@2x.jpg");
@@ -32,6 +33,7 @@
 
 .page-header--size-s {
   min-height: auto;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;

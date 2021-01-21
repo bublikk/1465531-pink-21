@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 688px;
-    margin: 0 auto -4px;
+    margin: 0 auto 6px;
   }
 }
 
@@ -53,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     @include text(700, 24px, 30px);
+    margin-bottom: -16px;
   }
 }
 
@@ -76,21 +77,17 @@
 }
 
 .slider__arrow {
-  background-color: $bg-primary;
-  border-color: rgba($bg-table, 0.3);
-  width: 30px;
-  height: 30px;
-  border-width: 0 1px 1px 0;
-  display: block;
-  outline: none;
-  cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $desktop-width) {
     display: block;
+    background-color: $bg-primary;
+    border-color: rgba($bg-table, 0.3);
+    width: 30px;
+    height: 30px;
+    border-width: 0 1px 1px 0;
+    outline: none;
+    cursor: pointer;
   }
 }
 
@@ -98,14 +95,14 @@
   transform: rotate(135deg);
   position: absolute;
   top: 50px;
-  left: 7px;
+  left: 137px;
 }
 
 .slider__arrow—-right {
   transform: rotate(-45deg);
   position: absolute;
   top: 50px;
-  left: 903px;
+  left: 1033px;
 }
 
 .slider__arrow—-left:hover,

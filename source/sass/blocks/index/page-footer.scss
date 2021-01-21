@@ -6,19 +6,19 @@
     flex-direction: row;
     align-items: center;
     width: 620px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    margin: 28px auto;
+    margin: 31px auto;
   }
 }
 
 .page-footer__logo {
   width: 145px;
   height: 40px;
-  margin: 39px auto 26px;
+  margin: 39px auto 24px;
 
   @media (min-width: $tablet-width) {
     margin: 0 70px 0 0;
@@ -44,13 +44,13 @@
 .page-footer__copyright {
   display: flex;
   align-items: center;
-  margin: 0 auto 34px;
+  margin: 0 auto 35px;
 
   @media (min-width: $tablet-width) {
-    margin: 12px 0 0 0;
+    margin: 13px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 19px 0 0 226px;
+    margin: 16px 0 0 225px;
   }
 }

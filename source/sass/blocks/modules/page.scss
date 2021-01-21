@@ -47,11 +47,13 @@
 .page__entry-wrapper::before {
   content: url("/img/triangle-white.svg");
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
-  top: 163px;
-  left: -670px;
+  top: 110px;
+  left: 0;
   margin: 0;
-  z-index: 10;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     top: 172px;
@@ -84,7 +86,7 @@
   color: $text-secondary;
 
   @media (min-width: $tablet-width) {
-    margin: 37px auto 32px;
+    margin: 37px auto 31px;
     line-height: 48px;
     width: 200px;
   }
@@ -158,11 +160,11 @@
   margin: 14px auto 8px;
 
   @media (min-width: $tablet-width) {
-    margin: 60px auto 9px;
+    margin: 14px auto 9px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 62px auto 22px;
+    margin: 16px auto 22px;
   }
 }
 

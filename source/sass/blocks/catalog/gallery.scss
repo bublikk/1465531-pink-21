@@ -246,7 +246,7 @@
   right: 128px;
 
   @media (min-width: $tablet-width) {
-    top: 13px;
+    top: 14px;
     right: 29px;
   }
 
@@ -267,11 +267,15 @@
   width: 13px;
   height: 12px;
   cursor: pointer;
-  top: 7px;
+  top: 6px;
   left: -31px;
 
   @media (min-width: $tablet-width) {
     left: auto;
     right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 7px;
   }
 }

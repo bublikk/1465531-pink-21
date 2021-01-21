@@ -19,32 +19,34 @@
 }
 
 .features__inner {
-  width: 280px;
-  margin: auto;
+  @include centerer;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 310px;
-    margin: 47px 0 0 330px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto;
-    width: 892px;
-    padding: 0;
     text-align: center;
   }
 }
 
 .features__list {
+  width: 280px;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 47px auto 13px 310px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    padding-top: 333px;
+    width: 892px;
     gap: 72px;
+    padding-top: 333px;
+    margin: auto;
   }
 }
 
@@ -175,7 +177,7 @@
     background-color: $bg-secondary;
     z-index: 100;
     padding-top: 56px;
-    margin: -26px auto 5px;
+    margin: -26px auto 7px;
   }
 }
 
@@ -188,7 +190,7 @@
   @media (min-width: $desktop-width) {
     @include text(700, 30px, 30px);
     width: 526px;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
   }
 }
 
@@ -202,17 +204,12 @@
 
 .features__description--margin {
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
   }
-}
-
-.features__description--link {
-  color: $text-info;
-  border-bottom: 1px solid $text-info;
 }
 
 .features__article {
@@ -229,36 +226,52 @@
   @media (min-width: $desktop-width) {
     display: block;
     background-color: $bg-secondary;
-    margin: -30px 0 169px 0;
+    padding: 10px 0 20px;
+    margin: -20px 0 168px 0;
   }
 }
 
-.features__article::before {
+.features__article-inner {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    @include centerer;
+    display: block;
+  }
+
+  a {
+    color: $text-info;
+    text-decoration: revert;
+  }
+}
+
+.features__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 297px;
+    margin: 76px 0 88px 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 526px;
+    margin: 121px 0 93px 370px;
+  }
+}
+
+.features__container::before {
   content: "";
   position: absolute;
   background-image: url("/img/timer.svg");
   background-repeat: no-repeat;
   width: 238px;
   height: 276px;
-  top: 54px;
-  left: 21px;
+  top: -41px;
+  left: -310px;
 
   @media (min-width: $desktop-width) {
     width: 298px;
     height: 345px;
-    top: 64px;
-    left: 130px;
-  }
-}
-
-.features__article-inner {
-  @media (min-width: $tablet-width) {
-    width: 297px;
-    margin: 75px 0 88px 310px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 526px;
-    margin: 107px 0 93px 480px;
+    top: -39px;
+    left: -369px;
   }
 }

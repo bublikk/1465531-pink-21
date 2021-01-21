@@ -1,9 +1,10 @@
 .copyright__text {
   @include text(400, 14px, 18px);
-  margin-right: 10px;
+  margin-right: 11px;
 
   @media (min-width: $desktop-width) {
     @include text(400, 18px, 18px);
+    margin-right: 9px;
   }
 }
 
@@ -11,6 +12,14 @@
   display: inline-block;
   width: 27px;
   height: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -1px;
+  }
 
   svg {
     fill: $text-info;

@@ -5,7 +5,6 @@
 }
 
 .reviews__wrapper {
-  position: relative;
   width: 280px;
   margin: 0 auto 36px;
 
@@ -20,23 +19,25 @@
   }
 }
 
-.reviews__wrapper::before {
+.reviews::before {
   content: url("/img/triangle-white.svg");
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
-  top: 314px;
-  left: -527px;
+  top: 270px;
+  left: 0;
   margin: 0;
-  z-index: 10;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 252px;
+    top: 254px;
     left: -486px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 241px;
-    left: -129px;
+    top: 242px;
+    left: 0;
   }
 }
 
