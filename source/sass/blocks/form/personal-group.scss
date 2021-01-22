@@ -10,12 +10,15 @@
 }
 
 .personal-group__list {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     margin-top: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 48px 0 14px -20px;
+    margin: 48px auto 0 -19px;
   }
 }
 

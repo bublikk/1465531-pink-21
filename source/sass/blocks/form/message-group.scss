@@ -16,7 +16,7 @@
   border: 2px solid $table-border;
   border-radius: 2px;
   margin: 12px auto 0;
-  padding: 13px 0 0 20px;
+  padding: 14px 0 0 20px;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -24,14 +24,14 @@
     height: 173px;
     margin: 33px auto 36px;
     text-align: center;
-    padding: 15px 2px 0 0;
+    padding: 14px 2px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 796px;
     height: 110px;
     text-align: left;
-    padding-left: 20px;
+    padding: 15px 0 0 20px;
     margin: 27px 0 28px 0;
   }
 }

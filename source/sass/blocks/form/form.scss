@@ -43,7 +43,7 @@
 
 .form__group {
   width: 280px;
-  margin: 0 auto 17px;
+  margin: 0 auto 3px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
 .form__group--personal {
   @media (min-width: $tablet-width) {
     width: 618px;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,20 +70,16 @@
 }
 
 .form__group--achievements-group {
-  margin-bottom: -16px;
+  margin-bottom: -15px;
 
   @media (min-width: $tablet-width) {
-    padding: 3px 11px;
+    padding: 2px 0;
     margin-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
   }
 }
 
 .form__group--contacts-group {
-  margin-bottom: 3px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
@@ -118,11 +114,11 @@
 }
 
 .form__group--submit-group {
-  margin-top: 25px;
+  margin: 25px auto 17px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
-    margin: auto auto 55px;
+    margin: auto auto 53px;
   }
 
   @media (min-width: $desktop-width) {

@@ -2,7 +2,7 @@
   margin: 0 auto 17px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 38px;
+    margin: 0 auto 36px;
   }
 }
 
@@ -13,7 +13,7 @@
 .slider__text {
   @include text(400, 14px, 30px);
   position: relative;
-  padding: 16px 0 14px;
+  padding: 16px 0 16px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
