@@ -44,25 +44,25 @@
   }
 }
 
-.page__entry-wrapper::before {
-  content: url("/img/triangle-white.svg");
+.page__entry-wrapper::after {
+  content: "";
   position: absolute;
+  background-image: url("/img/triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+  height: 506px;
   width: 100%;
-  top: 110px;
+  bottom: -535px;
   left: 0;
   margin: 0;
   z-index: -1;
 
   @media (min-width: $tablet-width) {
-    top: 172px;
-    left: -280px;
+    bottom: -520px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 253px;
-    left: 0;
+    bottom: -556px;
   }
 }
 
@@ -188,4 +188,8 @@
 
 .page__intro {
   margin-bottom: 33px;
+}
+
+.page__popup {
+  margin: auto;
 }
