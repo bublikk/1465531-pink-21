@@ -1,0 +1,76 @@
+.logo:hover .logo__img {
+  fill: $text-info;
+  opacity: 1;
+}
+
+.logo:active .logo__img {
+  fill: $text-secondary;
+  opacity: 0.3;
+}
+
+.logo__img--mobile {
+  fill: $bg-primary;
+  width: 74px;
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__img--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    fill: $bg-primary;
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__img--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $bg-primary;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.logo__footer {
+  height: 40px;
+  fill: $bg-table;
+}
+
+.logo__footer:hover {
+  fill: $text-info;
+}
+
+.logo__footer:active {
+  fill: $bg-table;
+  opacity: 0.3;
+}
+
+.logo__footer--tablet {
+  width: 145px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__footer--desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 147px;
+  }
+}

@@ -1,17 +1,17 @@
 .button-group {
   display: flex;
   flex-direction: column;
-  padding-bottom: 31px;
+  margin: 15px 0 0 -20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0 0 41px 48px;
+    margin: 0 0 41px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding: 0;
-    margin: 0 0 33px 91px;
+    margin: 0;
   }
 }
 
@@ -44,4 +44,30 @@
   @media (min-width: $desktop-width) {
     margin-right: 43px;
   }
+}
+
+.button-group__upload:hover {
+  background-color: $text-info;
+  color: $text-secondary;
+}
+
+.button-group__upload:active {
+  background-color: $text-info;
+  color: rgba($text-secondary, 0.3);
+}
+
+.button-group__cancel {
+  color: rgba($bg-table, 0.1);
+  border-color: rgba($bg-table, 0.1);
+}
+
+.button-group__cancel:hover {
+  color: rgba($bg-table, 0.3);
+  border-color: rgba($bg-table, 0.3);
+}
+
+.button-group__cancel:active {
+  color: rgba($text-secondary, 0.3);
+  background-color: rgba($bg-table, 0.3);
+  border: none;
 }

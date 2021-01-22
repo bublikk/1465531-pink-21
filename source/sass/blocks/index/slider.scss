@@ -1,5 +1,5 @@
 .slider__item {
-  margin: 0 auto 20px;
+  margin: 0 auto 17px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 38px;
@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 688px;
-    margin: 0 auto -4px;
+    margin: 0 auto 6px;
   }
 }
 
@@ -53,6 +53,7 @@
 
   @media (min-width: $desktop-width) {
     @include text(700, 24px, 30px);
+    margin-bottom: -16px;
   }
 }
 
@@ -76,22 +77,17 @@
 }
 
 .slider__arrow {
-  background-color: $bg-primary;
-  border-color: $bg-table;
-  opacity: 0.3;
-  width: 30px;
-  height: 30px;
-  border-width: 0 1px 1px 0;
-  display: block;
-  outline: none;
-  cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $desktop-width) {
     display: block;
+    background-color: $bg-primary;
+    border-color: rgba($bg-table, 0.3);
+    width: 30px;
+    height: 30px;
+    border-width: 0 1px 1px 0;
+    outline: none;
+    cursor: pointer;
   }
 }
 
@@ -99,14 +95,24 @@
   transform: rotate(135deg);
   position: absolute;
   top: 50px;
-  left: 7px;
+  left: 137px;
 }
 
 .slider__arrow—-right {
   transform: rotate(-45deg);
   position: absolute;
   top: 50px;
-  left: 903px;
+  left: 1033px;
+}
+
+.slider__arrow—-left:hover,
+.slider__arrow—-right:hover {
+  border-color: rgba($bg-table, 0.6);
+}
+
+.slider__arrow—-left:active,
+.slider__arrow—-right:active {
+  border-color: rgba($bg-table, 0.1);
 }
 
 .slider__toggles {
@@ -131,15 +137,17 @@
   cursor: pointer;
 }
 
+.slider__toggle:hover {
+  background-color: rgba($bg-table, 0.6);
+}
+
+.slider__toggle:active {
+  background-color: rgba($bg-table, 0.1);
+}
+
 .slider__toggle--current {
   width: 10px;
   height: 10px;
   background-color: $bg-primary;
   border: 3px solid $bg-table;
-}
-
-.slider__toggles--hidden {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

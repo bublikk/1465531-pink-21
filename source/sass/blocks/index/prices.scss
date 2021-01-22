@@ -28,7 +28,7 @@
 }
 
 .prices__table {
-  margin: 102px auto 40px;
+  margin: 103px auto 40px;
   position: relative;
   left: -604px;
 
@@ -40,4 +40,41 @@
   @media (min-width: $desktop-width) {
     padding-top: 152px;
   }
+}
+
+.prices__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 60px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.prices__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba($bg-table, 0.3);
+  border: inherit;
+  cursor: pointer;
+}
+
+.prices__toggle:hover {
+  background-color: rgba($bg-table, 0.6);
+}
+
+.prices__toggle:active {
+  background-color: rgba($bg-table, 0.1);
+}
+
+.prices__toggle--current {
+  width: 10px;
+  height: 10px;
+  background-color: $bg-primary;
+  border: 3px solid $bg-table;
 }

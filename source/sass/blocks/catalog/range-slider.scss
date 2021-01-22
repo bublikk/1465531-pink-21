@@ -1,23 +1,21 @@
-.range-slider {
-  padding-top: 35px;
-}
-
 .range-slider__form {
   display: flex;
   width: 240px;
-  height: 85px;
-  margin: 0 auto 74px;
+  height: 320px;
+  margin: 36px auto 2px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 274px;
     height: 190px;
-    margin: -27px auto 67px 48px;
+    margin: 8px auto 67px 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
-    margin: -36px 0 155px 90px;
+    margin: 0 0 155px 90px;
   }
 }
 
@@ -87,7 +85,11 @@
   margin: 7px 0 0 34px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 133px;
   }
 }
 
@@ -118,6 +120,11 @@
     height: 22px;
     margin-bottom: 50px;
   }
+}
+
+.range-slider__group:not(.range-slider__group--active) svg:hover {
+  fill: $bg-table;
+  opacity: 0.5;
 }
 
 .range-slider__label::before {
@@ -173,6 +180,7 @@
   position: absolute;
   top: 78px;
   left: 175px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 4px;
@@ -183,6 +191,10 @@
     top: 14px;
     left: 161px;
   }
+}
+
+.range-slider__label:active::after {
+  background-color: $text-info;
 }
 
 .range-slider__label--fill::after,

@@ -1,7 +1,7 @@
 .preview {
   background-image: url("/img/phone-mobile.png");
   background-repeat: no-repeat;
-  background-position: 50% 87px;
+  background-position: 50% 110px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/phone-mobile@2x.png");
@@ -11,7 +11,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("/img/phone-tablet.png");
     background-repeat: no-repeat;
-    background-position: 50% 18px;
+    background-position: 50% 75px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/phone-tablet@2x.png");
@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     background-image: url("/img/phone-desktop.png");
     background-repeat: no-repeat;
-    background-position: 97% 38px;
+    background-position: 97% 99px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/phone-desktop@2x.png");
@@ -49,7 +49,8 @@
   @media (min-width: $tablet-width) {
     background-color: inherit;
     padding: 0 0 95px 0;
-    margin: 0 auto;
+
+    @include centerer;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,7 +68,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 300px;
-    margin: 58px 0 0 20px;
+    margin: 58px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +86,7 @@
   background-color: inherit;
   padding: 12px;
   margin-bottom: 31px;
+  cursor: pointer;
 
   a {
     @include text(700, 18px, 18px);
@@ -105,6 +107,28 @@
   }
 }
 
+.preview__button:hover {
+  background-color: $bg-primary;
+
+  a {
+    color: $text-info;
+    opacity: 1;
+  }
+}
+
+.preview__button:active {
+  background-color: $bg-primary;
+
+  a {
+    color: $text-info;
+    opacity: 0.3;
+  }
+}
+
+.preview__button a:active {
+  background-color: $bg-primary;
+}
+
 .preview__list {
   display: flex;
   align-items: baseline;
@@ -122,10 +146,6 @@
 
 .preview__item {
   height: 47px;
-}
-
-.preview__app-store {
-  background-image: url("/img/app-store.png");
 }
 
 .preview__note {

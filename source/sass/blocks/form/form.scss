@@ -9,9 +9,42 @@
   }
 }
 
+.form input:hover,
+.form textarea:hover {
+  border-color: $bg-table;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline-color: $text-info;
+}
+
+.form input {
+  @include text(400, 18px, 30px);
+  color: $bg-table;
+  opacity: 1;
+}
+
+.form input::placeholder {
+  @include text(400, 18px, 30px);
+  color: $bg-table;
+  opacity: 1;
+}
+
+.form textarea {
+  color: $bg-table;
+  opacity: 1;
+}
+
+.form textarea::placeholder {
+  color: $bg-table;
+  opacity: 1;
+}
+
 .form__group {
   width: 280px;
   margin: 0 auto 17px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $table-border;
@@ -41,7 +74,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 3px 11px;
-    margin-bottom: 18px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -49,7 +86,7 @@
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,10 +115,6 @@
   @media (min-width: $tablet-width) {
     margin: 40px auto 50px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin: 40px auto 47px;
-  }
 }
 
 .form__group--submit-group {
@@ -93,7 +126,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: auto auto 7px;
+    margin: auto auto 4px;
   }
 }
 
@@ -121,17 +154,17 @@
 
 .form__legend--line {
   @media (min-width: $desktop-width) {
-    padding: 0 7.4% 0 4.4%;
+    padding: 0 4.4%;
   }
 }
 
-@media (max-width: $mobile-width-only) {
-  .form__wrapper--custom-background {
-    background-color: $bg-secondary;
-    padding-top: 38px;
-  }
 
-  .form__group {
-    border: none;
+.form__wrapper--custom-background {
+  background-color: $bg-secondary;
+  padding-top: 37px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $bg-primary;
+    padding-top: 0;
   }
 }

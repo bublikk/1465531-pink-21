@@ -10,12 +10,12 @@
 .photo-editor__inner {
   width: 280px;
   padding-top: 20px;
-  margin: 43px auto 0;
+  margin: 44px auto 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 620px;
-    padding-top: 58px;
+    padding: 58px 0 46px;
     margin: 70px auto 6px;
   }
 

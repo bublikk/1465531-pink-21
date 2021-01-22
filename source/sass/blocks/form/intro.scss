@@ -8,16 +8,21 @@
 
   @media (min-width: $tablet-width) {
     @include text(300, 50px, 68px);
-    padding: 3px 4px 43px 3px;
-    margin: 65px auto 18px;
+    padding: 34px 4px 43px 3px;
+    margin: 33px auto -34px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 57px auto 46px;
+    margin: 25px auto -5px;
   }
 }
 
 .intro__text--narrow {
+  @media (min-width: $tablet-width) {
+    padding: 3px 4px 43px 3px;
+    margin: 62px auto 2px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 620px;
     margin: 57px auto -37px;
