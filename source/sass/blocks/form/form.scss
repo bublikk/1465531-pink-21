@@ -75,6 +75,11 @@
   @media (min-width: $tablet-width) {
     padding: 2px 0;
     margin-bottom: 19px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
@@ -106,7 +111,7 @@
 }
 
 .form__group--message-group {
-  margin: 38px auto 7px;
+  margin: 38px auto 12px;
 
   @media (min-width: $tablet-width) {
     margin: 40px auto 50px;

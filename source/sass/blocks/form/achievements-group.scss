@@ -8,7 +8,7 @@
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin: 40px 0 10px 48px;
+    margin: 40px 0 27px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,9 +27,10 @@
   margin-bottom: 37px;
 }
 
-.achievements-group__list:last-child {
+.achievements-group__item:last-child {
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 27px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
