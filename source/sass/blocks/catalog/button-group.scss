@@ -1,7 +1,7 @@
 .button-group {
   display: flex;
   flex-direction: column;
-  margin: 15px 0 0 -20px;
+  margin: 45px auto 0 -20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;

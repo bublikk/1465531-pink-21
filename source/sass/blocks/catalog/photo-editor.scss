@@ -9,11 +9,14 @@
 
 .photo-editor__inner {
   width: 280px;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   margin: 44px auto 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
     width: 620px;
     padding: 58px 0 46px;
     margin: 70px auto 6px;

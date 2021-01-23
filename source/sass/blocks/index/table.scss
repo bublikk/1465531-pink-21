@@ -10,9 +10,9 @@
   }
 }
 
-th {
+.table th {
   width: 276px;
-  padding: 13px 37px 26px;
+  padding: 12px 38px 26px;
 
   &:nth-child(2) {
     border-radius: 4px 0 0 0;
@@ -37,12 +37,12 @@ th {
   }
 }
 
-td {
+.table td {
   @include text(400, 14px, 30px);
   background-color: $bg-primary;
   border-top: 2px solid $table-border;
   border-right: 2px solid $table-border;
-  padding: 13px 17px 16px 21px;
+  padding: 14px 17px 16px 18px;
 
   &:first-child {
     border-left: 2px solid $table-border;
@@ -105,13 +105,14 @@ td {
 .table__price {
   @include text(300, 18px, 30px);
   color: $text-secondary;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     @include text(300, 24px, 30px);
   }
 }
 
-.table__subtitle {
+.table .table__subtitle {
   @media (min-width: $tablet-width) {
     text-align: left;
     padding: 0 0 0 14px;
@@ -134,10 +135,10 @@ td {
 }
 
 .table__text {
-  display: none;
+  display: inline;
+  text-transform: uppercase;
 
-  @media (max-width: $mobile-width-only) {
-    display: inline;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
