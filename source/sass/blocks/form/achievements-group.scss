@@ -66,7 +66,7 @@
 }
 
 .achievements-group__input:checked + label::before {
-  background-image: url("/img/checkbox.svg");
+  background-image: url("../img/checkbox.svg");
 }
 
 .achievements-group__input:not(:disabled) + label:hover::before {

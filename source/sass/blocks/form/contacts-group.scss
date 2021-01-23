@@ -93,7 +93,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("/img/phone-icon.svg");
+    background-image: url("../img/phone-icon.svg");
     background-color: $table-border;
     background-repeat: no-repeat;
     background-position: center center;
@@ -118,7 +118,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("/img/mail-icon.svg");
+    background-image: url("../img/mail-icon.svg");
     background-color: $table-border;
     background-repeat: no-repeat;
     background-position: center center;
