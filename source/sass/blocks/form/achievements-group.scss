@@ -27,6 +27,16 @@
   margin-bottom: 37px;
 }
 
+.achievements-group__list:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
 .achievements-group__input {
   position: absolute;
   z-index: -1;
